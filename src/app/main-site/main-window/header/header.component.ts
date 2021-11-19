@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, HostListener, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { ViewChild } from '@angular/core';
@@ -20,6 +20,7 @@ import * as $ from 'jquery'
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('close_modal') close_modal: any
+  @ViewChild('modal') modal:ElementRef
 
 
   spinner = 'none'
@@ -142,6 +143,18 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  @HostListener('document:click',['$event'])
+  click(event)
+  {
+    if(this.modal.nativeElement.contains(event.target))
+    {
+      console.log('click inside')
+    }
+    else{
+      this.showAccount = 'none'
+     
+    }
+  }
   adminPanel = 'none'
 
   GetLoginValues(v: any) {

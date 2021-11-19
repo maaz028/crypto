@@ -38,3 +38,15 @@ footer .container.container-xxl
 {
     margin-left: 285px;
 }
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}

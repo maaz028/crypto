@@ -37,7 +37,9 @@ input.ng-invalid.ng-touched{
     filter: invert(100%);
 }
 .side-bar{
-    margin-top: 78px !important;
+   margin: 78px 0px !important;
+   /* padding: 63px 0px !important; */
+   overflow: scroll;
 
 }
 .side:hover{
@@ -120,7 +122,7 @@ input.ng-invalid.ng-touched{
    position: fixed;
    left: 0;
    background-color: #0f1932;
-   height: 100vh;
+   height: 88vh;
    box-shadow: 0px 30px 10px black;
  
 }

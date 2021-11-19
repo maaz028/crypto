@@ -36,7 +36,7 @@
                                                 <span class="pay-title">
                                                     <span class="pay-cur">USD</span>
                                                 </span>
-                                                <span class="pay-amount">{{this.prices}}</span>
+                                                <span class="pay-amount">0.561 USD</span>
                                                 <!-- <span class="pay-amount">{{this.prices.value}}</span> -->
                                             </label>
                                         </div>
@@ -417,23 +417,52 @@
                             <div class="token-balance-icon"><img
                                     src="https://app.tokenlite.net/images/token-symbol-light.png" alt=""></div>
 
-                            <div *ngIf="items?.length > 0">
-                                <div class="token-balance-text" *ngFor="let item of items">
-                                    <div style="display:table">
+                            <div>
+
+                                <h6 class="card-sub-title">Balance</h6>
+
+                                <div *ngFor="let item of items" class="token-balance-text">
+
+                                    <!-- <div style="display:table">
                                         <span class="lead">{{ item.symbol }}</span>
                                     </div>
 
                                     <div style="display:table">
                                         <span class="lead">{{ item.balance | currency }}</span>
-                                    </div>
+                                    </div> -->
+
+                                    <span class="lead"> {{item.balance.slice(0,8)/100000000}} <span> BNB </span></span>
+
 
                                     <!-- <h6 class="card-sub-title">Token Balance</h6>
                                     <span class="lead">0 <span>AXT </span></span> -->
                                     <!-- <span class="lead">{{tokenBalance}}</span> -->
 
                                 </div>
+
+                                <!-- //SHOW TOKENS HERE -->
+                                <div *ngFor="let b of bnb" class="token-balance-text">
+
+                                    <h6 class="card-sub-title">Tokens</h6>
+                                    <span class="lead"> {{b.symbol}} <span> {{b.balance}} </span></span>
+
+                                    <!-- <div style="display:table">
+                                        <span class="lead">{{ b.symbol }}</span>
+                                    </div>
+
+                                    <div style="display:table">
+                                        <span class="lead">{{ b.balance | currency }}</span>
+                                    </div> -->
+
+                                    <!-- <em class="fas fa-info-circle fs-11"
+                                                data-toggle="tooltip" data-placement="right" title=""
+                                                data-original-title="Equivalent to ~ USD"></em> -->
+
+                                </div>
+
+
                             </div>
-                          
+
                         </div>
                     </div>
                     <div class="token-sales card">
@@ -478,7 +507,7 @@
                 </div>
 
                 <ng-template #content let-modal>
-                    <div class="modal-header" style="background: white;">
+                    <div class="modal-header" style="background-color: white;" >
                         <h4 class="modal-title" id="modal-basic-title">
                             Add Wallet Address
                         </h4>
@@ -488,7 +517,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="popup-body popup-body-md" style="background: white;">
+                    <div class="popup-body popup-body-md" style="background-color: white;">
                         <h4 class="popup-title">Wallet Address</h4>
                         <p>In order to receive your <strong>TLE</strong> token, please select your wallet address and
                             you
@@ -513,11 +542,11 @@
 
                                             <div class="select">
                                                 <select name="property_type" id="property_type" class="minimal">
-                                                   
+
                                                     <option value="1">BSC</option>
                                                     <option value="2">BSC TEST NET</option>
                                                     <option value="3">OTHER TYPE</option>
-                                                   
+
                                                 </select>
                                             </div>
 
@@ -534,7 +563,8 @@
                                             value="0x246F4b668dd7fE55888EF50aF9F4aeF6C39d4Bdc" required=""
                                             aria-required="true">
                                     </div>
-                                    <span class="input-note">Note: You may loose your currency in case of wallet rules violation. See Wallet rules on corollary.</span>
+                                    <span class="input-note">Note: You may loose your currency in case of wallet rules
+                                        violation. See Wallet rules on corollary.</span>
                                 </div>
 
                                 <div class="d-sm-flex justify-content-between align-items-center">
@@ -542,7 +572,8 @@
                                     <!-- <button type="submit" class="btn btn-primary" >Wallet Change</button> -->
                                     <!-- <input type="button" class="btn btn-primary" value="Wallet Change" (click)="saveWallet() "> -->
 
-                                    <input type="button" class="btn btn-primary" value="Add Wallet Address" (click)="fetchClientWallet() ">
+                                    <input type="button" class="btn btn-primary" value="Add Wallet Address"
+                                        (click)="fetchClientWallet() ">
 
                                 </div>
 
@@ -559,16 +590,16 @@
                             </button>
 
                              <input type="button" value="Call Function" (click)="fetchWallet()"> -->
-                        <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+                    <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
                         Save
                     </button> -->
-                        <!-- <input type="button" value="Add Wallet Address" (click)="fetchWallet() "> -->
+                    <!-- <input type="button" value="Add Wallet Address" (click)="fetchWallet() "> -->
 
 
 
-                        <!-- <input type="button" value="Save Wallet Address In Table" (click)="saveWallet() "> -->
+                    <!-- <input type="button" value="Save Wallet Address In Table" (click)="saveWallet() "> -->
 
-                        <!-- <input type="button" value="call prices" (click)="fetchPrices() "> -->
+                    <!-- <input type="button" value="call prices" (click)="fetchPrices() "> -->
 
 
 

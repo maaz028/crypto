@@ -27,16 +27,22 @@ export class BuyTokenComponent implements OnInit {
 
   prices: any;
   items: any;
+  bnb: any;
   tokenId: any;
   //tokenAddress: string = "0x246F4b668dd7fE55888EF50aF9F4aeF6C39d4Bdc";//test token address
-  
+
   tokenAddress: string = "0x7bA9a42bcB796cEF1e8cA72F29642594D9274279";//client token address
 
   records: any;
 
-  headers = new HttpHeaders()
+  balanceHeaders = new HttpHeaders()
     .set('content-type', 'application/json')
     .set('X-API-Key', 'lMp8i9xNPuqQ2k7A31l78dpGKwa7UyXDA1s1fv6sTfF6uLiGRbOI8C2YTLRP6PaD')
+    .set('Access-Control-Allow-Origin', '*');
+
+    tokenHeaders = new HttpHeaders()
+    .set('content-type', 'application/json')
+    .set('X-API-Key', 'DggIFSx9e0a9MwyVUIrAf8Onm2kRX3JV7hQwbQAHIe8HKV6mzz7AWpBgTFACgsGG')
     .set('Access-Control-Allow-Origin', '*');
 
   priceHeaders = new HttpHeaders()
@@ -54,16 +60,33 @@ export class BuyTokenComponent implements OnInit {
   }
 
   fetchClientWallet() {
+
+    //get balance of user wallet
+    https://deep-index.moralis.io/api/v2/0x7bA9a42bcB796cEF1e8cA72F29642594D9274279/balance?chain=bsc
     this.tokenId = this.tokenAddress;
-    this.http.get('https://deep-index.moralis.io/api/v2/' + this.tokenId + '/erc20?chain=bsc',
-      { 'headers': this.headers }
+    this.http.get('https://deep-index.moralis.io/api/v2/0x7bA9a42bcB796cEF1e8cA72F29642594D9274279/balance?chain=bsc',
+      { 'headers': this.balanceHeaders }
     ).subscribe(data => {
       this.items = data;
-      console.log("records " + data)
+      this.items = Array.of(this.items)
+     // console.log("records " + this.items.balance.slice(0,4))
+       //console.log("records " + this.items.balance.length);
     });
 
-    this._obj.SaveTokenData({     
-      EmailId:  sessionStorage.getItem('_email'),
+    // get user tokens
+    this.tokenId = this.tokenAddress;
+    this.http.get('https://deep-index.moralis.io/api/v2/' + this.tokenId + '/erc20?chain=bsc',
+      { 'headers': this.tokenHeaders }
+    ).subscribe(data => {
+     this.bnb = data;
+     //this.bnb = Array.of(this.bnb)
+      console.log("symbol " + this.bnb)
+    });
+
+
+
+    this._obj.SaveTokenData({
+      EmailId: sessionStorage.getItem('_email'),
       WalletAddress: this.tokenAddress
     }).subscribe(
       data => {

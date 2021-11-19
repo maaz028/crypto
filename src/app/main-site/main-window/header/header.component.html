@@ -219,12 +219,12 @@
                                 class="btn btn-md btn-thin btn-outline btn-auto btn-primary btn-round no-change register"><span>Login
                                     / Register</span></a></li>
                                  
-                                    <div class="profile1-toggle" [style.display] = 'showMoreFeatures'>
+                                    <div #modal class="profile1-toggle" [style.display] = 'showMoreFeatures'>
                                         <li class="topbar-nav-item relative">
                                             <span class="user-welcome d-none d-lg-inline-block">Welcome! {{user_name}}</span>
                                             <a class=" user-thumb" id="profile" type="button" (click)='handleAccount()'><img src="./assets/images/accountLogo.png"
                                                     alt=""></a>
-                                            <div
+                                            <div 
                                                 class=" dropdown-content dropdown-content-right dropdown-arrow-right user-dropdown" [style.display]='showAccount'>
                                                 <div class="user-status">
                                                     <h6 class="text-white">{{user_email}} <small
@@ -233,8 +233,8 @@
                                                     <div class="user-status-balance">0 <small>AXT</small></div>
                                                 </div>
                                                 <ul class="user-links">
-                                                    <li><a href="login.html"><img src="./assets/images/accountLogo.png" alt=""> My
-                                                            Profile</a></li>
+                                                    <!-- <li><a href="login.html"><img src="./assets/images/accountLogo.png" alt=""> My
+                                                            Profile</a></li> -->
                                                     <li><a (click)='navigate()' routerLink="dashboard"><img src="./assets/images/accountLogo.png" alt="">Dashboard</a></li>
                                                     <li><a href="https://axtract.co.uk"><img src="./assets/images/refer.png" alt="">
                                                             Referral</a></li>
@@ -255,7 +255,7 @@
                                             </script>
                                         </li>
                                     </div>
-                                    <div class="profile1-toggle" [style.display] = 'showMoreFeaturesAdmin'>
+                                    <div #modal class="profile1-toggle" [style.display] = 'showMoreFeaturesAdmin'>
                                         <li class="topbar-nav-item relative">
                                             <span class="user-welcome d-none d-lg-inline-block">Welcome! {{user_name}}</span>
                                             <a class=" user-thumb" id="profile" type="button" (click)='handleAccount()'><img src="./assets/images/accountLogo.png"
@@ -368,23 +368,39 @@
     
         <ul class="user-icon-nav" style="padding-top: 20px;">
             <li class="menu-item ">
-                <a class="menu-link side" routerLink="dashboard"  routerLinkActive="active"><img src="./assets/images/dashboard.png" alt=""> Dashboard</a>
+                <a class="menu-link side" routerLink="dashboard"  routerLinkActive="active"><img src="./assets/dashboard.png" alt=""> Dashboard</a>
                
             </li>
             <li class="menu-item ">
-                <a class="menu-link side " routerLink="buy-token"><img src="./assets/images/buy_token.png" alt=""> Buy Token</a>
+                <a class="menu-link side " routerLink="buy-token"><img src="./assets/buy-token.png" alt=""> Buy Token</a>
                
             </li>
             <li class="menu-item ">
-                <a class="menu-link side" routerLink="transactions"><img src="./assets/images/transaction.png" alt=""> Transactions</a>
+                <a class="menu-link side" routerLink="transactions"><img src="./assets/transactionss.png" alt=""> Transactions</a>
                
             </li>
             <li class="menu-item ">
-                <a class="menu-link side" routerLink="profile"><img src="./assets/images/user.png" alt=""> Profile</a>
+                <a class="menu-link side" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="./assets/trade.png" alt=""> Trade</a>
+               
+            </li>
+            <div class="collapse" id="collapseExample" >
+                <div class="card card-body" style="background: #0f1629;">
+                    <li class="menu-item ">
+                        <a class="menu-link side" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="./assets/exchange.png" alt=""> Exchange</a>
+                       
+                    </li>
+                    <li class="menu-item ">
+                        <a class="menu-link side" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="./assets/liquidity.png" alt=""> Liquidity</a>
+                       
+                    </li>
+                </div>
+              </div>
+            <li class="menu-item ">
+                <a class="menu-link side" routerLink="profile"><img src="./assets/kyc.png" alt=""> Profile</a>
                
             </li>
             <li class="menu-item ">
-                <a class="menu-link side" routerLink="my-token"><img src="./assets/images/my token.png" alt=""> My Token</a>
+                <a class="menu-link side" routerLink="my-token"><img src="./assets/coins.png" alt=""> My Token</a>
                
             </li>
             <li class="menu-item ">
@@ -394,7 +410,7 @@
 
      
             <li class="menu-item ">
-                <a class="menu-link side" routerLink="kyc-application">KYC Application</a>
+                <a class="menu-link side" routerLink="kyc-application"><img src="./assets/recruitment.png" style="filter: invert(100%);" alt=""> KYC </a>
                
             </li>
         
