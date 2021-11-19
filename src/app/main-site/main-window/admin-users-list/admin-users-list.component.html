@@ -1,0 +1,335 @@
+<div class="page-content">
+    <div class="container">
+                <a href="userList.html" class="btn btn-warning-alt btn-between w-100 mgb-1-5x user-wallet">Please setup your application mail settings</a>
+	<div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+
+        <div class="card content-area content-area-mh">
+            <div class="card-innr">
+                <div class="card-head has-aside">
+                    <h4 class="card-title">Investor User List</h4>
+                    <div class="relative d-inline-block d-md-none">
+                        <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img src="./assets/images/dropDown.png" alt=""></a>
+                        <div class="toggle-class dropdown-content dropdown-content-center-left pd-2x">
+                            <div class="card-opt data-action-list">
+                                <ul class="btn-grp btn-grp-block guttar-20px guttar-vr-10px">
+                                    <li><a class="btn btn-auto btn-info btn-outline btn-sm" href="https://demo2.aluxhomes.org/public/admin/users/wallet/change-request">Wallet Change Request</a></li>
+                                    <li>
+                                        <a href="#" class="btn btn-auto btn-sm btn-primary" data-toggle="modal" data-target="#addUser">
+                                            <em class="fas fa-plus-circle"> </em>
+                                            <span>Add <span class="d-none d-md-inline-block">User</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-opt data-action-list d-none d-md-inline-flex">
+                        <ul class="btn-grp btn-grp-block guttar-20px">
+                            <li><a class="btn btn-info btn-outline btn-sm" href="userList.html">Wallet Change Request</a></li>
+                            <li>
+                                <a href="#" class="btn btn-auto btn-sm btn-primary" data-toggle="modal" data-target="#addUser">
+                                    <span>Add <span class="d-none d-md-inline-block">User</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="page-nav-wrap">
+                    <div class="page-nav-bar justify-content-between bg-lighter">
+                        <div class="page-nav w-100 w-lg-auto">
+                            <ul class="nav">
+                                <li class="nav-item active"><a class="nav-link" href="userList.html">Investor / Users</a></li>
+                                <li class="nav-item "><a class="nav-link" href="userList.html">Admin Account</a></li>
+                                <li class="nav-item "><a class="nav-link" href="userList.html">All</a></li>
+                            </ul>
+                        </div>
+                        <div class="search flex-grow-1 pl-lg-4 w-100 w-sm-auto">
+                            <form action="https://demo2.aluxhomes.org/public/admin/transactions" method="GET" autocomplete="off">
+                                <div class="input-wrap">
+                                    <span class="input-icon input-icon-left"><img src="./assets/images/search.png" alt=""></span>
+                                    <input type="search" class="input-solid input-transparent" placeholder="Tranx ID to quick search" value="" name="s">
+                                </div>
+                            </form>
+                        </div>
+                                            </div>
+                    
+                                    </div>
+
+                 
+                <table class="data-table user-list">
+                    <thead>
+                        <tr class="data-item data-head">
+                            <th class="data-col data-col-wd-md filter-data dt-user">User</th>
+                            <th class="data-col data-col-wd-md dt-email">Email</th>
+                            <th class="data-col dt-token">Tokens</th>
+                            <th class="data-col dt-verify">Verified Status</th>
+                            <th class="data-col dt-login">Last Login</th>
+                            <th class="data-col dt-status">Status</th>
+                            <th class="data-col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                <tr class="data-item">
+                            <td class="data-col data-col-wd-md dt-user">
+                                <div class="d-flex align-items-center">
+                                    <div class="fake-class">
+                                        <span class="lead user-name text-wrap">Toyin</span>
+                                        <span class="sub user-id">UD00006
+                                                                                    </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="data-col data-col-wd-md dt-email">
+                                <span class="sub sub-s2 sub-email text-wrap">samzeyk123@gmail.com</span>
+                            </td>
+                            <td class="data-col dt-token">
+                                <span class="lead lead-btoken">0</span>
+                            </td>
+                            <td class="data-col dt-verify">
+                                <ul class="data-vr-list">
+                                    <li><div class="data-state data-state-sm data-state-pending"></div> Email</li>
+                                     
+                                                                        <li><div class="data-state data-state-sm data-state-missing"></div>KYC </li>
+                                                                    </ul>
+                            </td>
+                            <td class="data-col dt-login">
+                                <span class="sub sub-s2 sub-time">Not logged yet</span>
+                            </td>
+                            <td class="data-col dt-status">
+                                <span class="dt-status-md badge badge-outline badge-md badge-success">Active</span>
+                                <span class="dt-status-sm badge badge-sq badge-outline badge-md badge-success">A</span>
+                            </td>
+                            <td class="data-col text-right">
+                                <div class="relative d-inline-block">
+                                    <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img style="width: 20px;" class="drop" src="./assets/images/dropDown.png" alt=""></a>
+                                    <div class="toggle-class dropdown-content dropdown-content-top-left">
+                                        <ul class="dropdown-list more-menu-2">
+                                            <li><a href="userList.html"> View Details</a></li>
+                                            <li><a class="user-email-action" href="#EmailUser" data-uid="2" data-toggle="modal">Send Email</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="transactions" class="user-form-action user-action">Transaction</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="activities" class="user-form-action user-action">Activities</a></li>
+                                            <li><a href="javascript:void(0)" data-uid="2" data-type="referrals" class="user-form-action user-action">Referrals</a></li>
+
+                                                                                        <li><a class="user-form-action user-action" href="#" data-type="reset_pwd" data-uid="2" >Reset Pass</a></li>
+                                                                                        
+                                                                                         <li><a href="#" data-uid="2" data-type="suspend_user" class="user-action front">Suspend</a></li>
+
+                                                                                     </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                                                <tr class="data-item">
+                            <td class="data-col data-col-wd-md dt-user">
+                                <div class="d-flex align-items-center">
+                                    <div class="fake-class">
+                                        <span class="lead user-name text-wrap">Ibegi Saviour</span>
+                                        <span class="sub user-id">UD00005
+                                                                                    </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="data-col data-col-wd-md dt-email">
+                                <span class="sub sub-s2 sub-email text-wrap">ibegi.saviour@gmail.com</span>
+                            </td>
+                            <td class="data-col dt-token">
+                                <span class="lead lead-btoken">0</span>
+                            </td>
+                            <td class="data-col dt-verify">
+                                <ul class="data-vr-list">
+                                    <li><div class="data-state data-state-sm data-state-pending"></div> Email</li>
+                                     
+                                                                        <li><div class="data-state data-state-sm data-state-missing"></div>KYC </li>
+                                                                    </ul>
+                            </td>
+                            <td class="data-col dt-login">
+                                <span class="sub sub-s2 sub-time">Not logged yet</span>
+                            </td>
+                            <td class="data-col dt-status">
+                                <span class="dt-status-md badge badge-outline badge-md badge-success">Active</span>
+                                <span class="dt-status-sm badge badge-sq badge-outline badge-md badge-success">A</span>
+                            </td>
+                            <td class="data-col text-right">
+                                <div class="relative d-inline-block">
+                                    <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img style="width: 20px;" class="drop" src="./assets/images/dropDown.png" alt=""></a>
+                                    <div class="toggle-class dropdown-content dropdown-content-top-left">
+                                        <ul class="dropdown-list more-menu-2">
+                                            <li><a href="userList.html"> View Details</a></li>
+                                            <li><a class="user-email-action" href="#EmailUser" data-uid="2" data-toggle="modal">Send Email</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="transactions" class="user-form-action user-action">Transaction</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="activities" class="user-form-action user-action">Activities</a></li>
+                                            <li><a href="javascript:void(0)" data-uid="2" data-type="referrals" class="user-form-action user-action">Referrals</a></li>
+
+                                                                                        <li><a class="user-form-action user-action" href="#" data-type="reset_pwd" data-uid="2" >Reset Pass</a></li>
+                                                                                        
+                                                                                         <li><a href="#" data-uid="2" data-type="suspend_user" class="user-action front">Suspend</a></li>
+
+                                                                                     </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                                                <tr class="data-item">
+                            <td class="data-col data-col-wd-md dt-user">
+                                <div class="d-flex align-items-center">
+                                    <div class="fake-class">
+                                        <span class="lead user-name text-wrap">Abdulhameed Yunusa</span>
+                                        <span class="sub user-id">UD00004
+                                                                                    </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="data-col data-col-wd-md dt-email">
+                                <span class="sub sub-s2 sub-email text-wrap">ayhameed176@gmail.com</span>
+                            </td>
+                            <td class="data-col dt-token">
+                                <span class="lead lead-btoken">0</span>
+                            </td>
+                            <td class="data-col dt-verify">
+                                <ul class="data-vr-list">
+                                    <li><div class="data-state data-state-sm data-state-approved"></div> Email</li>
+                                     
+                                                                        <li><div class="data-state data-state-sm data-state-missing"></div>KYC </li>
+                                                                    </ul>
+                            </td>
+                            <td class="data-col dt-login">
+                                <span class="sub sub-s2 sub-time">29 Jun, 2021 07:02 AM</span>
+                            </td>
+                            <td class="data-col dt-status">
+                                <span class="dt-status-md badge badge-outline badge-md badge-success">Active</span>
+                                <span class="dt-status-sm badge badge-sq badge-outline badge-md badge-success">A</span>
+                            </td>
+                            <td class="data-col text-right">
+                                <div class="relative d-inline-block">
+                                    <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img style="width: 20px;" class="drop" src="./assets/images/dropDown.png" alt=""></a>
+                                    <div class="toggle-class dropdown-content dropdown-content-top-left">
+                                        <ul class="dropdown-list more-menu-2">
+                                            <li><a href="userList.html"> View Details</a></li>
+                                            <li><a class="user-email-action" href="#EmailUser" data-uid="2" data-toggle="modal">Send Email</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="transactions" class="user-form-action user-action">Transaction</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="activities" class="user-form-action user-action">Activities</a></li>
+                                            <li><a href="javascript:void(0)" data-uid="2" data-type="referrals" class="user-form-action user-action">Referrals</a></li>
+
+                                                                                        <li><a class="user-form-action user-action" href="#" data-type="reset_pwd" data-uid="2" >Reset Pass</a></li>
+                                                                                        
+                                                                                         <li><a href="#" data-uid="2" data-type="suspend_user" class="user-action front">Suspend</a></li>
+
+                                                                                     </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                                                <tr class="data-item">
+                            <td class="data-col data-col-wd-md dt-user">
+                                <div class="d-flex align-items-center">
+                                    <div class="fake-class">
+                                        <span class="lead user-name text-wrap">Mega</span>
+                                        <span class="sub user-id">UD00003
+                                                                                    </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="data-col data-col-wd-md dt-email">
+                                <span class="sub sub-s2 sub-email text-wrap">mmmearners@gmail.com</span>
+                            </td>
+                            <td class="data-col dt-token">
+                                <span class="lead lead-btoken">0</span>
+                            </td>
+                            <td class="data-col dt-verify">
+                                <ul class="data-vr-list">
+                                    <li><div class="data-state data-state-sm data-state-approved"></div> Email</li>
+                                     
+                                                                        <li><div class="data-state data-state-sm data-state-missing"></div>KYC </li>
+                                                                    </ul>
+                            </td>
+                            <td class="data-col dt-login">
+                                <span class="sub sub-s2 sub-time">27 May, 2021 09:33 PM</span>
+                            </td>
+                            <td class="data-col dt-status">
+                                <span class="dt-status-md badge badge-outline badge-md badge-success">Active</span>
+                                <span class="dt-status-sm badge badge-sq badge-outline badge-md badge-success">A</span>
+                            </td>
+                            <td class="data-col text-right">
+                                <div class="relative d-inline-block">
+                                    <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img style="width: 20px;" class="drop" src="./assets/images/dropDown.png" alt=""></a>
+                                    <div class="toggle-class dropdown-content dropdown-content-top-left">
+                                        <ul class="dropdown-list more-menu-2">
+                                            <li><a href="userList.html"> View Details</a></li>
+                                            <li><a class="user-email-action" href="#EmailUser" data-uid="2" data-toggle="modal">Send Email</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="transactions" class="user-form-action user-action">Transaction</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="activities" class="user-form-action user-action">Activities</a></li>
+                                            <li><a href="javascript:void(0)" data-uid="2" data-type="referrals" class="user-form-action user-action">Referrals</a></li>
+
+                                                                                        <li><a class="user-form-action user-action" href="#" data-type="reset_pwd" data-uid="2" >Reset Pass</a></li>
+                                                                                        
+                                                                                         <li><a href="#" data-uid="2" data-type="suspend_user" class="user-action front">Suspend</a></li>
+
+                                                                                     </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                                                <tr class="data-item">
+                            <td class="data-col data-col-wd-md dt-user">
+                                <div class="d-flex align-items-center">
+                                    <div class="fake-class">
+                                        <span class="lead user-name text-wrap">Ade</span>
+                                        <span class="sub user-id">UD00002
+                                                                                    </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="data-col data-col-wd-md dt-email">
+                                <span class="sub sub-s2 sub-email text-wrap">predictionroom@gmail.com</span>
+                            </td>
+                            <td class="data-col dt-token">
+                                <span class="lead lead-btoken">0</span>
+                            </td>
+                            <td class="data-col dt-verify">
+                                <ul class="data-vr-list">
+                                    <li><div class="data-state data-state-sm data-state-pending"></div> Email</li>
+                                     
+                                                                        <li><div class="data-state data-state-sm data-state-missing"></div>KYC </li>
+                                                                    </ul>
+                            </td>
+                            <td class="data-col dt-login">
+                                <span class="sub sub-s2 sub-time">Not logged yet</span>
+                            </td>
+                            <td class="data-col dt-status">
+                                <span class="dt-status-md badge badge-outline badge-md badge-success">Active</span>
+                                <span class="dt-status-sm badge badge-sq badge-outline badge-md badge-success">A</span>
+                            </td>
+                            <td class="data-col text-right">
+                                <div class="relative d-inline-block">
+                                    <a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><img style="width: 20px;" class="drop" src="./assets/images/dropDown.png" alt=""></a>
+                                    <div class="toggle-class dropdown-content dropdown-content-top-left">
+                                        <ul class="dropdown-list more-menu-2">
+                                            <li><a href="userList.html"> View Details</a></li>
+                                            <li><a class="user-email-action" href="#EmailUser" data-uid="2" data-toggle="modal">Send Email</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="transactions" class="user-form-action user-action">Transaction</a></li>
+                                                                                        <li><a href="javascript:void(0)" data-uid="2" data-type="activities" class="user-form-action user-action">Activities</a></li>
+                                            <li><a href="javascript:void(0)" data-uid="2" data-type="referrals" class="user-form-action user-action">Referrals</a></li>
+
+                                                                                        <li><a class="user-form-action user-action" href="#" data-type="reset_pwd" data-uid="2" >Reset Pass</a></li>
+                                                                                        
+                                                                                         <li><a href="#" data-uid="2" data-type="suspend_user" class="user-action front">Suspend</a></li>
+
+                                                                                     </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                                            </tbody>
+                </table>
+                
+                            </div>
+            
+        </div>
+    </div>
+</div>

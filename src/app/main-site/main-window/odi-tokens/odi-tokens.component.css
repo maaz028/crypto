@@ -1,0 +1,32 @@
+/* .banner{
+    padding-top: 60px !important;
+} */
+
+.icox{
+    font-size: 30px !important;
+/* margin: 14px 0px; */
+margin-bottom: 57px !important;
+color: white !important;
+}
+.icox2{
+    font-size: 20px !important;
+}
+.tab-content.nk-preview-content
+{
+    padding: 0px !important;
+}
+.nk-preview
+{
+    padding: 0px !important;
+}
+.title.title.title-thin,.title.title-semibold{
+    color: white !important;
+}
+.section.bg-theme.tc-light.has-bg-image
+{
+    padding-bottom: 194px !important;
+    overflow: none;
+}
+.single-chart{
+    padding-bottom: 101px !important;
+}

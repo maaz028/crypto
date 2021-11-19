@@ -1,0 +1,12 @@
+.white-bg {
+    background-color: #fff
+}
+
+.active-language {
+    pointer-events: none;
+    cursor: default
+}
+
+.non-active-language {
+    cursor: pointer
+}

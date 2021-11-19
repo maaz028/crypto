@@ -1,0 +1,1004 @@
+<div class="page-content" style="background-color: #f7fafdeb;  ">
+    <div class="container">
+        <div class="row">
+            <div class="main-content col-lg-12">
+                <a href="settings.html"
+                    class="btn btn-warning-alt btn-between w-100 mgb-1-5x user-wallet">Please setup your application
+                    mail settings</a>
+                <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+
+                <div class="content-area card">
+                    <div class="card-innr">
+                        <div class="card-head">
+                            <h4 class="card-title">ICO/STO Settings </h4>
+                        </div>
+                        <div class="gaps-1x"></div>
+                        <div class="card-text ico-setting setting-token-details">
+                            <h3 class="card-title-md text-primary">ICO/STO Token Details</h3>
+                            <form action="https://demo2.aluxhomes.org/public/admin/ajax/stages/settings/update"
+                                method="POST" id="stage_setting_details_form" class="validate-modern">
+                                <input type="hidden" name="_token" value="giJbbSiurROUOCsFyidItmaPUEF819GbK8jUxIvj">
+                                <input type="hidden" name="req_type" value="token_details">
+                                <div class="row">
+                                    <div class="col-xl-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Token Name</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" required type="text" name="token_name"
+                                                    value="Peoples Coin" minlength="3">
+                                            </div>
+                                            <span class="input-note">Enter name of token without spaces. Lower and
+                                                uppercase can be used.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Token Symbol</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" required type="text"
+                                                    name="token_symbol" value="PCN" minlength="2">
+                                            </div>
+                                            <span class="input-note">Usually 3-4 Letters like ETH, BTC, WISH
+                                                etc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Decimal Minimum</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" type="number" name="token_decimal_min"
+                                                    value="2" min="2" max="10">
+                                            </div>
+                                            <span class="input-note">Minimum number of decimal point for
+                                                calculation. 2-10 are accepted.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Decimal Maximum</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" type="number" name="token_decimal_max"
+                                                    value="6" min="6" max="18">
+                                            </div>
+                                            <span class="input-note">Maximum number of decimal point for
+                                                calculation. 6-18 are accepted.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Decimal Display</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" type="number"
+                                                    name="token_decimal_show" value="3" min="0" max="8">
+                                            </div>
+                                            <span class="input-note">The number of decimal point apply to show
+                                                number in User/Admin Card balance.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gaps-1x"></div>
+                                <div class="d-flex">
+                                    <button class="btn btn-primary save-disabled" type="submit" disabled><span>Update</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sap sap-gap"></div>
+                        <div class="card-text ico-setting setting-token-purchase">
+                            <h4 class="card-title-md text-primary">Purchase & Addtional Setting</h4>
+                            <form action="https://demo2.aluxhomes.org/public/admin/ajax/stages/settings/update"
+                                method="POST" id="stage_setting_purchase_form" class="validate-modern">
+                                <input type="hidden" name="_token" value="giJbbSiurROUOCsFyidItmaPUEF819GbK8jUxIvj">
+                                <input type="hidden" name="req_type" value="token_purchase">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Default Selection</label>
+                                            <div class="input-wrap">
+                                                <select class="select select-block select-bordered active_method"
+                                                    name="token_default_method">
+                                                    <option value="USD">US Dollar</option>
+                                                    <option value="EUR">Euro</option>
+                                                    <option value="GBP">Pound Sterling</option>
+                                                    <option value="CAD">Canadian Dollar</option>
+                                                    <option value="AUD">Australian Dollar</option>
+                                                    <option value="TRY">Turkish Lira</option>
+                                                    <option value="RUB">Russian Ruble</option>
+                                                    <option value="INR">Indian Rupee</option>
+                                                    <option value="BRL">Brazilian Real</option>
+                                                    <option value="NZD">New Zealand Dollar</option>
+                                                    <option value="PLN">Polish Złoty</option>
+                                                    <option value="JPY">Japanese Yen</option>
+                                                    <option value="MYR">Malaysian Ringgit</option>
+                                                    <option value="IDR">Indonesian Rupiah</option>
+                                                    <option value="NGN">Nigerian Naira</option>
+                                                    <option value="MXN">Mexican Peso</option>
+                                                    <option value="PHP">Philippine Peso</option>
+                                                    <option value="CHF">Swiss franc</option>
+                                                    <option value="THB">Thai Baht</option>
+                                                    <option value="SGD">Singapore dollar</option>
+                                                    <option value="CZK">Czech koruna</option>
+                                                    <option value="NOK">Norwegian krone</option>
+                                                    <option value="ZAR">South African rand</option>
+                                                    <option value="SEK">Swedish krona</option>
+                                                    <option value="KES">Kenyan shilling</option>
+                                                    <option value="NAD">Namibian dollar</option>
+                                                    <option value="DKK">Danish krone</option>
+                                                    <option value="HKD">Hong Kong dollar</option>
+                                                    <option value="ETH">Ethereum</option>
+                                                    <option value="BTC">Bitcoin</option>
+                                                    <option value="LTC">Litecoin</option>
+                                                    <option value="XRP">Ripple</option>
+                                                    <option value="XLM">Stellar</option>
+                                                    <option value="BCH">Bitcoin Cash</option>
+                                                    <option selected value="BNB">Binance Coin (Based)</option>
+                                                    <option value="USDT">Tether</option>
+                                                    <option value="TRX">TRON</option>
+                                                    <option value="USDC">USD Coin</option>
+                                                    <option value="DASH">Dash</option>
+                                                    <option value="WAVES">Waves</option>
+                                                    <option value="XMR">Monero</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Token Price Show in</label>
+                                            <div class="input-wrap">
+                                                <select class="select select-block select-bordered"
+                                                    name="token_default_in_userpanel">
+                                                    <option selected value="USD"> BNB -> USD</option>
+                                                    <option value="EUR"> BNB -> EUR</option>
+                                                    <option value="GBP"> BNB -> GBP</option>
+                                                    <option value="CAD"> BNB -> CAD</option>
+                                                    <option value="AUD"> BNB -> AUD</option>
+                                                    <option value="TRY"> BNB -> TRY</option>
+                                                    <option value="RUB"> BNB -> RUB</option>
+                                                    <option value="INR"> BNB -> INR</option>
+                                                    <option value="BRL"> BNB -> BRL</option>
+                                                    <option value="NZD"> BNB -> NZD</option>
+                                                    <option value="PLN"> BNB -> PLN</option>
+                                                    <option value="JPY"> BNB -> JPY</option>
+                                                    <option value="MYR"> BNB -> MYR</option>
+                                                    <option value="IDR"> BNB -> IDR</option>
+                                                    <option value="NGN"> BNB -> NGN</option>
+                                                    <option value="MXN"> BNB -> MXN</option>
+                                                    <option value="PHP"> BNB -> PHP</option>
+                                                    <option value="CHF"> BNB -> CHF</option>
+                                                    <option value="THB"> BNB -> THB</option>
+                                                    <option value="SGD"> BNB -> SGD</option>
+                                                    <option value="CZK"> BNB -> CZK</option>
+                                                    <option value="NOK"> BNB -> NOK</option>
+                                                    <option value="ZAR"> BNB -> ZAR</option>
+                                                    <option value="SEK"> BNB -> SEK</option>
+                                                    <option value="KES"> BNB -> KES</option>
+                                                    <option value="NAD"> BNB -> NAD</option>
+                                                    <option value="DKK"> BNB -> DKK</option>
+                                                    <option value="HKD"> BNB -> HKD</option>
+                                                    <option value="ETH"> BNB -> ETH</option>
+                                                    <option value="BTC"> BNB -> BTC</option>
+                                                    <option value="LTC"> BNB -> LTC</option>
+                                                    <option value="XRP"> BNB -> XRP</option>
+                                                    <option value="XLM"> BNB -> XLM</option>
+                                                    <option value="BCH"> BNB -> BCH</option>
+                                                    <option value="USDT"> BNB -> USDT</option>
+                                                    <option value="TRX"> BNB -> TRX</option>
+                                                    <option value="USDC"> BNB -> USDC</option>
+                                                    <option value="DASH"> BNB -> DASH</option>
+                                                    <option value="WAVES"> BNB -> WAVES</option>
+                                                    <option value="XMR"> BNB -> XMR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Per Token Price</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch" name="token_price_show" type="checkbox"
+                                                    checked id="per-token-price">
+                                                <label for="per-token-price">Show</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">KYC Before Purchase</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch" name="token_before_kyc" type="checkbox"
+                                                    id="kyc-before-buy">
+                                                <label for="kyc-before-buy">Enable</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="input-item-label">Purchase With</label>
+                                        <ul class="d-flex flex-wrap checkbox-list checkbox-list-c5">
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_usd" id="pw-usd" checked
+                                                            type="checkbox">
+                                                        <label for="pw-usd">US Dollar (USD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_eur" id="pw-eur" checked
+                                                            type="checkbox">
+                                                        <label for="pw-eur">Euro (EUR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_gbp" id="pw-gbp" type="checkbox">
+                                                        <label for="pw-gbp">Pound Sterling (GBP)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_cad" id="pw-cad" type="checkbox">
+                                                        <label for="pw-cad">Canadian Dollar (CAD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_aud" id="pw-aud" type="checkbox">
+                                                        <label for="pw-aud">Australian Dollar (AUD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_try" id="pw-try" type="checkbox">
+                                                        <label for="pw-try">Turkish Lira (TRY)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_rub" id="pw-rub" type="checkbox">
+                                                        <label for="pw-rub">Russian Ruble (RUB)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_inr" id="pw-inr" checked
+                                                            type="checkbox">
+                                                        <label for="pw-inr">Indian Rupee (INR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_brl" id="pw-brl" type="checkbox">
+                                                        <label for="pw-brl">Brazilian Real (BRL)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_nzd" id="pw-nzd" type="checkbox">
+                                                        <label for="pw-nzd">New Zealand Dollar (NZD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_pln" id="pw-pln" type="checkbox">
+                                                        <label for="pw-pln">Polish Złoty (PLN)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_jpy" id="pw-jpy" type="checkbox">
+                                                        <label for="pw-jpy">Japanese Yen (JPY)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_myr" id="pw-myr" type="checkbox">
+                                                        <label for="pw-myr">Malaysian Ringgit (MYR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_idr" id="pw-idr" type="checkbox">
+                                                        <label for="pw-idr">Indonesian Rupiah (IDR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_ngn" id="pw-ngn" checked
+                                                            type="checkbox">
+                                                        <label for="pw-ngn">Nigerian Naira (NGN)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_mxn" id="pw-mxn" type="checkbox">
+                                                        <label for="pw-mxn">Mexican Peso (MXN)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_php" id="pw-php" type="checkbox">
+                                                        <label for="pw-php">Philippine Peso (PHP)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_chf" id="pw-chf" type="checkbox">
+                                                        <label for="pw-chf">Swiss franc (CHF)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_thb" id="pw-thb" type="checkbox">
+                                                        <label for="pw-thb">Thai Baht (THB)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_sgd" id="pw-sgd" type="checkbox">
+                                                        <label for="pw-sgd">Singapore dollar (SGD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_czk" id="pw-czk" type="checkbox">
+                                                        <label for="pw-czk">Czech koruna (CZK)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_nok" id="pw-nok" type="checkbox">
+                                                        <label for="pw-nok">Norwegian krone (NOK)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_zar" id="pw-zar" type="checkbox">
+                                                        <label for="pw-zar">South African rand (ZAR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_sek" id="pw-sek" type="checkbox">
+                                                        <label for="pw-sek">Swedish krona (SEK)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_kes" id="pw-kes" type="checkbox">
+                                                        <label for="pw-kes">Kenyan shilling (KES)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_nad" id="pw-nad" type="checkbox">
+                                                        <label for="pw-nad">Namibian dollar (NAD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_dkk" id="pw-dkk" type="checkbox">
+                                                        <label for="pw-dkk">Danish krone (DKK)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_hkd" id="pw-hkd" type="checkbox">
+                                                        <label for="pw-hkd">Hong Kong dollar (HKD)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_eth" id="pw-eth" checked
+                                                            type="checkbox">
+                                                        <label for="pw-eth">Ethereum (ETH)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_btc" id="pw-btc" type="checkbox">
+                                                        <label for="pw-btc">Bitcoin (BTC)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_ltc" id="pw-ltc" checked
+                                                            type="checkbox">
+                                                        <label for="pw-ltc">Litecoin (LTC)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_xrp" id="pw-xrp" checked
+                                                            type="checkbox">
+                                                        <label for="pw-xrp">Ripple (XRP)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_xlm" id="pw-xlm" checked
+                                                            type="checkbox">
+                                                        <label for="pw-xlm">Stellar (XLM)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_bch" id="pw-bch" checked
+                                                            type="checkbox">
+                                                        <label for="pw-bch">Bitcoin Cash (BCH)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_bnb" id="pw-bnb" disabled
+                                                            type="checkbox">
+                                                        <label for="pw-bnb">Binance Coin (BNB)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_usdt" id="pw-usdt" checked
+                                                            type="checkbox">
+                                                        <label for="pw-usdt">Tether (USDT)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_trx" id="pw-trx" checked
+                                                            type="checkbox">
+                                                        <label for="pw-trx">TRON (TRX)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_usdc" id="pw-usdc" type="checkbox">
+                                                        <label for="pw-usdc">USD Coin (USDC)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_dash" id="pw-dash" checked
+                                                            type="checkbox">
+                                                        <label for="pw-dash">Dash (DASH)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_waves" id="pw-waves"
+                                                            type="checkbox">
+                                                        <label for="pw-waves">Waves (WAVES)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-item text-left">
+                                                    <div class="input-wrap">
+                                                        <input class="input-checkbox input-checkbox-sm all_methods"
+                                                            name="token_purchase_xmr" id="pw-xmr" type="checkbox">
+                                                        <label for="pw-xmr">Monero (XMR)</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gaps-2x"></div>
+                                <h5 class="card-title-sm text-secondary">Progress Bar Setting</h5>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Raised Amount Show in</label>
+                                            <div class="input-wrap">
+                                                <select class="select select-block select-bordered"
+                                                    name="token_sales_raised">
+                                                    <option value="token">Token Amount</option>
+                                                    <option selected value="usd">US Dollar</option>
+                                                    <option value="eur">Euro</option>
+                                                    <option value="gbp">Pound Sterling</option>
+                                                    <option value="cad">Canadian Dollar</option>
+                                                    <option value="aud">Australian Dollar</option>
+                                                    <option value="try">Turkish Lira</option>
+                                                    <option value="rub">Russian Ruble</option>
+                                                    <option value="inr">Indian Rupee</option>
+                                                    <option value="brl">Brazilian Real</option>
+                                                    <option value="nzd">New Zealand Dollar</option>
+                                                    <option value="pln">Polish Złoty</option>
+                                                    <option value="jpy">Japanese Yen</option>
+                                                    <option value="myr">Malaysian Ringgit</option>
+                                                    <option value="idr">Indonesian Rupiah</option>
+                                                    <option value="ngn">Nigerian Naira</option>
+                                                    <option value="mxn">Mexican Peso</option>
+                                                    <option value="php">Philippine Peso</option>
+                                                    <option value="chf">Swiss franc</option>
+                                                    <option value="thb">Thai Baht</option>
+                                                    <option value="sgd">Singapore dollar</option>
+                                                    <option value="czk">Czech koruna</option>
+                                                    <option value="nok">Norwegian krone</option>
+                                                    <option value="zar">South African rand</option>
+                                                    <option value="sek">Swedish krona</option>
+                                                    <option value="kes">Kenyan shilling</option>
+                                                    <option value="nad">Namibian dollar</option>
+                                                    <option value="dkk">Danish krone</option>
+                                                    <option value="hkd">Hong Kong dollar</option>
+                                                    <option value="eth">Ethereum</option>
+                                                    <option value="btc">Bitcoin</option>
+                                                    <option value="ltc">Litecoin</option>
+                                                    <option value="xrp">Ripple</option>
+                                                    <option value="xlm">Stellar</option>
+                                                    <option value="bch">Bitcoin Cash</option>
+                                                    <option value="bnb">Binance Coin (Based)</option>
+                                                    <option value="usdt">Tether</option>
+                                                    <option value="trx">TRON</option>
+                                                    <option value="usdc">USD Coin</option>
+                                                    <option value="dash">Dash</option>
+                                                    <option value="waves">Waves</option>
+                                                    <option value="xmr">Monero</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Total Amount Show in</label>
+                                            <div class="input-wrap">
+                                                <select class="select select-block select-bordered"
+                                                    name="token_sales_total">
+                                                    <option value="token">Token Amount</option>
+                                                    <option selected value="usd">US Dollar</option>
+                                                    <option value="eur">Euro</option>
+                                                    <option value="gbp">Pound Sterling</option>
+                                                    <option value="cad">Canadian Dollar</option>
+                                                    <option value="aud">Australian Dollar</option>
+                                                    <option value="try">Turkish Lira</option>
+                                                    <option value="rub">Russian Ruble</option>
+                                                    <option value="inr">Indian Rupee</option>
+                                                    <option value="brl">Brazilian Real</option>
+                                                    <option value="nzd">New Zealand Dollar</option>
+                                                    <option value="pln">Polish Złoty</option>
+                                                    <option value="jpy">Japanese Yen</option>
+                                                    <option value="myr">Malaysian Ringgit</option>
+                                                    <option value="idr">Indonesian Rupiah</option>
+                                                    <option value="ngn">Nigerian Naira</option>
+                                                    <option value="mxn">Mexican Peso</option>
+                                                    <option value="php">Philippine Peso</option>
+                                                    <option value="chf">Swiss franc</option>
+                                                    <option value="thb">Thai Baht</option>
+                                                    <option value="sgd">Singapore dollar</option>
+                                                    <option value="czk">Czech koruna</option>
+                                                    <option value="nok">Norwegian krone</option>
+                                                    <option value="zar">South African rand</option>
+                                                    <option value="sek">Swedish krona</option>
+                                                    <option value="kes">Kenyan shilling</option>
+                                                    <option value="nad">Namibian dollar</option>
+                                                    <option value="dkk">Danish krone</option>
+                                                    <option value="hkd">Hong Kong dollar</option>
+                                                    <option value="eth">Ethereum</option>
+                                                    <option value="btc">Bitcoin</option>
+                                                    <option value="ltc">Litecoin</option>
+                                                    <option value="xrp">Ripple</option>
+                                                    <option value="xlm">Stellar</option>
+                                                    <option value="bch">Bitcoin Cash</option>
+                                                    <option value="bnb">Binance Coin (Based)</option>
+                                                    <option value="usdt">Tether</option>
+                                                    <option value="trx">TRON</option>
+                                                    <option value="usdc">USD Coin</option>
+                                                    <option value="dash">Dash</option>
+                                                    <option value="waves">Waves</option>
+                                                    <option value="xmr">Monero</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Soft/HardCap Show in</label>
+                                            <div class="input-wrap">
+                                                <select class="select select-block select-bordered"
+                                                    name="token_sales_cap">
+                                                    <option value="token">Token Amount</option>
+                                                    <option selected value="usd">US Dollar</option>
+                                                    <option value="eur">Euro</option>
+                                                    <option value="gbp">Pound Sterling</option>
+                                                    <option value="cad">Canadian Dollar</option>
+                                                    <option value="aud">Australian Dollar</option>
+                                                    <option value="try">Turkish Lira</option>
+                                                    <option value="rub">Russian Ruble</option>
+                                                    <option value="inr">Indian Rupee</option>
+                                                    <option value="brl">Brazilian Real</option>
+                                                    <option value="nzd">New Zealand Dollar</option>
+                                                    <option value="pln">Polish Złoty</option>
+                                                    <option value="jpy">Japanese Yen</option>
+                                                    <option value="myr">Malaysian Ringgit</option>
+                                                    <option value="idr">Indonesian Rupiah</option>
+                                                    <option value="ngn">Nigerian Naira</option>
+                                                    <option value="mxn">Mexican Peso</option>
+                                                    <option value="php">Philippine Peso</option>
+                                                    <option value="chf">Swiss franc</option>
+                                                    <option value="thb">Thai Baht</option>
+                                                    <option value="sgd">Singapore dollar</option>
+                                                    <option value="czk">Czech koruna</option>
+                                                    <option value="nok">Norwegian krone</option>
+                                                    <option value="zar">South African rand</option>
+                                                    <option value="sek">Swedish krona</option>
+                                                    <option value="kes">Kenyan shilling</option>
+                                                    <option value="nad">Namibian dollar</option>
+                                                    <option value="dkk">Danish krone</option>
+                                                    <option value="hkd">Hong Kong dollar</option>
+                                                    <option value="eth">Ethereum</option>
+                                                    <option value="btc">Bitcoin</option>
+                                                    <option value="ltc">Litecoin</option>
+                                                    <option value="xrp">Ripple</option>
+                                                    <option value="xlm">Stellar</option>
+                                                    <option value="bch">Bitcoin Cash</option>
+                                                    <option value="bnb">Binance Coin (Based)</option>
+                                                    <option value="usdt">Tether</option>
+                                                    <option value="trx">TRON</option>
+                                                    <option value="usdc">USD Coin</option>
+                                                    <option value="dash">Dash</option>
+                                                    <option value="waves">Waves</option>
+                                                    <option value="xmr">Monero</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gaps-1x"></div>
+                                <div class="d-flex">
+                                    <button class="btn btn-primary save-disabled" type="submit" disabled><span>Update</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sap sap-gap"></div>
+                        <div class="card-text ico-setting setting-ico-userpanel">
+                            <h4 class="card-title-md text-primary">User Panel Settings</h4>
+                            <p>Manage your User/Investor panel setting for your application.</p>
+                            <div class="gaps-1x"></div>
+                            <form action="https://demo2.aluxhomes.org/public/admin/ajax/stages/settings/update"
+                                method="POST" id="upanel_setting_form" class="validate-modern">
+                                <input type="hidden" name="_token" value="giJbbSiurROUOCsFyidItmaPUEF819GbK8jUxIvj">
+                                <input type="hidden" name="req_type" value="user_panel">
+                                <h5 class="card-title-sm text-secondary">User Dashboard</h5>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Display Contribution In</label>
+                                            <div class="row guttar-15px">
+                                                <div class="col-6">
+                                                    <div class="input-wrap">
+                                                        <select class="select select-block select-bordered"
+                                                            name="user_in_cur1">
+                                                            <option selected value="usd">USD</option>
+                                                            <option value="eur">EUR</option>
+                                                            <option value="gbp">GBP</option>
+                                                            <option value="cad">CAD</option>
+                                                            <option value="aud">AUD</option>
+                                                            <option value="try">TRY</option>
+                                                            <option value="rub">RUB</option>
+                                                            <option value="inr">INR</option>
+                                                            <option value="brl">BRL</option>
+                                                            <option value="nzd">NZD</option>
+                                                            <option value="pln">PLN</option>
+                                                            <option value="jpy">JPY</option>
+                                                            <option value="myr">MYR</option>
+                                                            <option value="idr">IDR</option>
+                                                            <option value="ngn">NGN</option>
+                                                            <option value="mxn">MXN</option>
+                                                            <option value="php">PHP</option>
+                                                            <option value="chf">CHF</option>
+                                                            <option value="thb">THB</option>
+                                                            <option value="sgd">SGD</option>
+                                                            <option value="czk">CZK</option>
+                                                            <option value="nok">NOK</option>
+                                                            <option value="zar">ZAR</option>
+                                                            <option value="sek">SEK</option>
+                                                            <option value="kes">KES</option>
+                                                            <option value="nad">NAD</option>
+                                                            <option value="dkk">DKK</option>
+                                                            <option value="hkd">HKD</option>
+                                                            <option value="eth">ETH</option>
+                                                            <option value="btc">BTC</option>
+                                                            <option value="ltc">LTC</option>
+                                                            <option value="xrp">XRP</option>
+                                                            <option value="xlm">XLM</option>
+                                                            <option value="bch">BCH</option>
+                                                            <option value="usdt">USDT</option>
+                                                            <option value="trx">TRX</option>
+                                                            <option value="usdc">USDC</option>
+                                                            <option value="dash">DASH</option>
+                                                            <option value="waves">WAVES</option>
+                                                            <option value="xmr">XMR</option>
+                                                            <option value="hide">Hide</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-wrap">
+                                                        <select class="select select-block select-bordered"
+                                                            name="user_in_cur2">
+                                                            <option value="usd">USD</option>
+                                                            <option value="eur">EUR</option>
+                                                            <option value="gbp">GBP</option>
+                                                            <option value="cad">CAD</option>
+                                                            <option value="aud">AUD</option>
+                                                            <option value="try">TRY</option>
+                                                            <option value="rub">RUB</option>
+                                                            <option value="inr">INR</option>
+                                                            <option value="brl">BRL</option>
+                                                            <option value="nzd">NZD</option>
+                                                            <option value="pln">PLN</option>
+                                                            <option value="jpy">JPY</option>
+                                                            <option value="myr">MYR</option>
+                                                            <option value="idr">IDR</option>
+                                                            <option value="ngn">NGN</option>
+                                                            <option value="mxn">MXN</option>
+                                                            <option value="php">PHP</option>
+                                                            <option value="chf">CHF</option>
+                                                            <option value="thb">THB</option>
+                                                            <option value="sgd">SGD</option>
+                                                            <option value="czk">CZK</option>
+                                                            <option value="nok">NOK</option>
+                                                            <option value="zar">ZAR</option>
+                                                            <option value="sek">SEK</option>
+                                                            <option value="kes">KES</option>
+                                                            <option value="nad">NAD</option>
+                                                            <option value="dkk">DKK</option>
+                                                            <option value="hkd">HKD</option>
+                                                            <option value="eth">ETH</option>
+                                                            <option selected value="btc">BTC</option>
+                                                            <option value="ltc">LTC</option>
+                                                            <option value="xrp">XRP</option>
+                                                            <option value="xlm">XLM</option>
+                                                            <option value="bch">BCH</option>
+                                                            <option value="usdt">USDT</option>
+                                                            <option value="trx">TRX</option>
+                                                            <option value="usdc">USDC</option>
+                                                            <option value="dash">DASH</option>
+                                                            <option value="waves">WAVES</option>
+                                                            <option value="xmr">XMR</option>
+                                                            <option value="hide">Hide</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="input-note">Select two currencies which will show on
+                                                balance card for <strong>'Contribution in'</strong>.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">My Token Page</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch" name="user_mytoken_page" type="checkbox"
+                                                    checked id="show-mytoken-page">
+                                                <label for="show-mytoken-page">Enable</label>
+                                            </div>
+                                            <span class="input-note">Whether enable or disable the <strong>'My
+                                                    Token'</strong> page from User Panel.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Stage wise Overview</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch" name="user_mytoken_stage"
+                                                    type="checkbox" checked id="show-stage-overview">
+                                                <label for="show-stage-overview">Show</label>
+                                            </div>
+                                            <span class="input-note">Whether show or hide the stage wise purchase
+                                                overview on <strong>'My Token'</strong> page.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="gaps-2x"></div>
+                                <h5 class="card-title-sm text-secondary">Receiving Wallet for User Profile</h5>
+                                <p class="wide-lg">You may need your user/investor wallet address so you can send
+                                    token/smart contract to them. You can specify one or multiple or define your own
+                                    name to ask your user/investor to provide address. If they provide then you can
+                                    get from each user details.</p>
+                                <div class="gaps-1x"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Supported Wallet</label>
+                                            <div class="input-wrap">
+                                                <select name="token_wallet_opt[]"
+                                                    class="select select-block select-bordered" value=""
+                                                    data-placeholder="Select Options" multiple="multiple">
+                                                    <option selected value="ethereum">Ethereum</option>
+                                                    <option selected value="bitcoin">Bitcoin</option>
+                                                    <option selected value="binance">Binance</option>
+                                                    <option value="bitcoin-cash">BitcoinCash</option>
+                                                    <option selected value="litecoin">Litecoin</option>
+                                                    <option value="ripple">Ripple</option>
+                                                    <option value="stellar">Stellar</option>
+                                                    <option value="tether">Tether</option>
+                                                    <option value="waves">WAVES</option>
+                                                    <option value="monero">Monero</option>
+                                                    <option value="dash">DASH</option>
+                                                    <option selected value="tron">TRON</option>
+                                                </select>
+                                            </div>
+                                            <span class="input-note">Choose one or multiple wallet name.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Custom Wallet</label>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="input-wrap">
+                                                        <input class="input-bordered" placeholder="wallet-name"
+                                                            type="text" name="token_wallet_custom[]"
+                                                            value="SafemoonCoin">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-wrap">
+                                                        <input class="input-bordered" placeholder="Wallet Label"
+                                                            type="text" name="token_wallet_custom[]" value="SMC">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="input-note">You can specify any custom wallet name.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Note for Wallet</label>
+                                            <div class="input-wrap">
+                                                <input class="input-bordered" type="text" name="token_wallet_note"
+                                                    value="Address should be ERC20-compliant.">
+                                            </div>
+                                            <span class="input-note">The note will show under the wallet address
+                                                input field.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Before Purchase Alert</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch" name="token_wallet_req" type="checkbox"
+                                                    checked id="before-purchase-alert">
+                                                <label for="before-purchase-alert"><span>Hide</span><span
+                                                        class="over">Show</span></label>
+                                            </div>
+                                            <div class="input-note">Promote 'enter wallet address before buy' on buy
+                                                token page.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gaps-1x"></div>
+                                <div class="d-flex">
+                                    <button class="btn btn-primary save-disabled" type="submit" disabled><span>Update</span></button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

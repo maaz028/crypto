@@ -1,0 +1,16 @@
+.input-solid{
+    margin: 15px 0px !important;
+    border: 2px solid black !important;
+}
+.input-icon.input-icon-left
+{
+    width: 18px !important;
+}
+div.dataTables_wrapper div.dataTables_filter label
+{
+    display: none !important;
+}
+#DataTables_Table_0_filter
+{
+    display: none !important;
+}

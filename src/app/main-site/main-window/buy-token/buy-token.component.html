@@ -1,0 +1,586 @@
+<div class="page-content" style="background-color:#f7fafdeb;">
+    <div class="container">
+        <div class="row">
+
+            <div class="main-content  col-lg-8">
+                <div class="d-lg-none">
+                    <a href="javascript:void(0)"
+                        class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet">Add your wallet address
+                        before buy <em class="ti ti-arrow-right"></em></a>
+                    <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+                </div>
+
+                <div class="content-area card">
+                    <div class="card-innr">
+                        <form action="javascript:void(0)" method="post" class="token-purchase">
+                            <div class="card-head">
+                                <h4 class="card-title">
+                                    Choose currency and calculate AXT token price
+                                </h4>
+                            </div>
+                            <div class="card-text">
+                                <p>You can buy our AXT token using the below currency choices to become part of our
+                                    project.</p>
+                            </div>
+
+                            <!-- here json data will display -->
+                            <div class="token-currency-choose payment-list">
+                                <div class="row guttar-15px">
+
+
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payusd"
+                                                name="paymethod" value="usd">
+                                            <label class="pay-option-label" for="payusd">
+                                                <span class="pay-title">
+                                                    <span class="pay-cur">USD</span>
+                                                </span>
+                                                <span class="pay-amount">{{this.prices}}</span>
+                                                <!-- <span class="pay-amount">{{this.prices.value}}</span> -->
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payeur"
+                                                name="paymethod" value="eur">
+                                            <label class="pay-option-label" for="payeur">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">EUR</span>
+                                                </span>
+                                                <span class="pay-amount">0.6438 EUR</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paygbp"
+                                                name="paymethod" value="gbp">
+                                            <label class="pay-option-label" for="paygbp">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">GBP</span>
+                                                </span>
+                                                <span class="pay-amount">0.54345 GBP</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paytry"
+                                                name="paymethod" value="try">
+                                            <label class="pay-option-label" for="paytry">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">TRY</span>
+                                                </span>
+                                                <span class="pay-amount">6.927 TRY</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payrub"
+                                                name="paymethod" value="rub">
+                                            <label class="pay-option-label" for="payrub">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">RUB</span>
+                                                </span>
+                                                <span class="pay-amount">53.2875 RUB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payngn"
+                                                name="paymethod" value="ngn">
+                                            <label class="pay-option-label" for="payngn">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">NGN</span>
+                                                </span>
+                                                <span class="pay-amount">419.175 NGN</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paychf"
+                                                name="paymethod" value="chf">
+                                            <label class="pay-option-label" for="paychf">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">CHF</span>
+                                                </span>
+                                                <span class="pay-amount">0.6909 CHF</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paysgd"
+                                                name="paymethod" value="sgd">
+                                            <label class="pay-option-label" for="paysgd">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">SGD</span>
+                                                </span>
+                                                <span class="pay-amount">1.00725 SGD</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payeth"
+                                                name="paymethod" value="eth" checked>
+                                            <label class="pay-option-label" for="payeth">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">ETH</span>
+                                                </span>
+                                                <span class="pay-amount">0.00017865 ETH</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paybtc"
+                                                name="paymethod" value="btc">
+                                            <label class="pay-option-label" for="paybtc">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">BTC</span>
+                                                </span>
+                                                <span class="pay-amount">0.00001139 BTC</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payxrp"
+                                                name="paymethod" value="xrp">
+                                            <label class="pay-option-label" for="payxrp">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">XRP</span>
+                                                </span>
+                                                <span class="pay-amount">0.65385 XRP</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payxlm"
+                                                name="paymethod" value="xlm">
+                                            <label class="pay-option-label" for="payxlm">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">XLM</span>
+                                                </span>
+                                                <span class="pay-amount">1.902 XLM</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paybch"
+                                                name="paymethod" value="bch">
+                                            <label class="pay-option-label" for="paybch">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">BCH</span>
+                                                </span>
+                                                <span class="pay-amount">0.001164 BCH</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paybnb"
+                                                name="paymethod" value="bnb">
+                                            <label class="pay-option-label" for="paybnb">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">BNB</span>
+                                                </span>
+                                                <span class="pay-amount">0.001515 BNB</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payusdt"
+                                                name="paymethod" value="usdt">
+                                            <label class="pay-option-label" for="payusdt">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">USDT</span>
+                                                </span>
+                                                <span class="pay-amount">0.75 USDT</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paytrx"
+                                                name="paymethod" value="trx">
+                                            <label class="pay-option-label" for="paytrx">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">TRX</span>
+                                                </span>
+                                                <span class="pay-amount">7.1295 TRX</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payusdc"
+                                                name="paymethod" value="usdc">
+                                            <label class="pay-option-label" for="payusdc">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">USDC</span>
+                                                </span>
+                                                <span class="pay-amount">0.75 USDC</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paydash"
+                                                name="paymethod" value="dash">
+                                            <label class="pay-option-label" for="paydash">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">DASH</span>
+                                                </span>
+                                                <span class="pay-amount">0.0036645 DASH</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="paybusd"
+                                                name="paymethod" value="busd">
+                                            <label class="pay-option-label" for="paybusd">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">BUSD</span>
+                                                </span>
+                                                <span class="pay-amount">0.75 BUSD</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="payment-item pay-option">
+                                            <input class="pay-option-check pay-method" type="radio" id="payada"
+                                                name="paymethod" value="ada">
+                                            <label class="pay-option-label" for="payada">
+                                                <span class="pay-title">
+
+                                                    <span class="pay-cur">ADA</span>
+                                                </span>
+                                                <span class="pay-amount">0.330825 ADA</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end json data -->
+
+                            <div class="card-head">
+                                <h4 class="card-title">Amount of contribute</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Enter the amount you would like to contribute in order to calculate the amount of
+                                    tokens you will receive. The calculator below helps to convert the required
+                                    quantity of tokens into the amount of your selected currency.</p>
+                            </div>
+                            <div class="token-contribute">
+                                <div class="token-calc">
+                                    <div class="token-pay-amount payment-get"><input
+                                            class="input-bordered input-with-hint token-number" type="text"
+                                            id="token-number" value="" min="2500" max="50000">
+                                        <div class="token-pay-currency"><span
+                                                class="input-hint input-hint-sap payment-get-cur payment-cal-cur ucap">AXT</span>
+                                        </div>
+                                    </div>
+                                    <div class="token-received token-received-alt">
+                                        <div class="token-eq-sign">=</div>
+                                        <div class="token-received-amount">
+                                            <h5 class="token-amount pay-amount-u">0</h5>
+                                            <div class="token-symbol pay-currency ucap">eth</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="token-calc-note note note-plane token-note">
+                                    <div class="note-box">
+                                        <span class="note-icon">
+
+                                        </span>
+                                        <span class="note-text text-light"><strong class="min-amount">0.446625</strong>
+                                            <span class="pay-currency ucap">eth</span> (<strong
+                                                class="min-token">2,500</strong>
+                                            <span class="token-symbol ucap">AXT</span>) Minimum contribution amount
+                                            is required.</span>
+                                    </div>
+                                    <div class="note-text note-text-alert"></div>
+                                </div>
+                            </div>
+
+                            <div class="token-bonus-ui">
+                                <div class="bonus-bar with-base-bonus">
+                                    <div class="bonus-base">
+                                        <span class="bonus-base-title">Bonus</span>
+                                        <span class="bonus-base-amount">On Sale</span>
+                                        <span class="bonus-base-percent">25%</span>
+                                    </div>
+                                    <div class="bonus-extra">
+                                        <div class="bonus-extra-item bonus-tire-15" data-percent="100"><span
+                                                class="bonus-extra-amount">2500 AXT</span><span
+                                                class="bonus-extra-percent">15%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-overview-wrap">
+                                <div class="token-overview">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="token-bonus token-bonus-sale">
+                                                <span class="token-overview-title">+ Sale Bonus 25%</span>
+                                                <span
+                                                    class="token-overview-value bonus-on-sale tokens-bonuses-sale">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="token-bonus token-bonus-amount">
+                                                <span class="token-overview-title">+ Amount Bonus</span>
+                                                <span
+                                                    class="token-overview-value bonus-on-amount tokens-bonuses-amount">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="token-total">
+                                                <span class="token-overview-title font-bold">Total AXT</span>
+                                                <span
+                                                    class="token-overview-value token-total-amount text-primary payment-summary-amount tokens-total">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="note note-plane note-danger note-sm pdt-1x pl-0">
+                                    <p>Your contribution will be calculated based on exchange rate at the moment
+                                        when your transaction is confirmed.</p>
+                                </div>
+                            </div>
+
+                            <div class="pay-buttons">
+                                <div class="pay-buttons pt-0">
+                                    <a data-type="offline" href="#payment-modal"
+                                        class="btn btn-primary btn-between payment-btn  token-payment-btn offline_payment">Make
+                                        Payment&nbsp;</a>
+                                </div>
+                                <div class="pay-notes">
+                                    <div class="note note-plane note-light note-md font-italic">
+
+                                        <p>Tokens will appear in your account after payment successfully made and
+                                            approved by our team. Please note that, AXT token will be distributed
+                                            after the token sales end-date.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="data_amount" value="0">
+                            <input type="hidden" id="data_currency" value="ETH">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside sidebar-right col-lg-4">
+                <div class="d-none d-lg-block">
+                    <a href="javascript:void(0)" class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet"
+                        (click)="open(content)">Add your wallet address
+                        before buy </a>
+
+                    <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+                </div>
+                <div class="token-statistics card card-token">
+                    <div class="card-innr">
+                        <div class="token-balance token-balance-with-icon">
+                            <div class="token-balance-icon"><img
+                                    src="https://app.tokenlite.net/images/token-symbol-light.png" alt=""></div>
+
+                            <div *ngIf="items?.length > 0">
+                                <div class="token-balance-text" *ngFor="let item of items">
+                                    <div style="display:table">
+                                        <span class="lead">{{ item.symbol }}</span>
+                                    </div>
+
+                                    <div style="display:table">
+                                        <span class="lead">{{ item.balance | currency }}</span>
+                                    </div>
+
+                                    <!-- <h6 class="card-sub-title">Token Balance</h6>
+                                    <span class="lead">0 <span>AXT </span></span> -->
+                                    <!-- <span class="lead">{{tokenBalance}}</span> -->
+
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="token-sales card">
+                        <div class="card-innr">
+                            <div class="card-head">
+                                <h5 class="card-title card-title-sm">Token Sales</h5>
+                            </div>
+                            <div class="token-rate-wrap row">
+                                <div class="token-rate col-md-6 col-lg-12">
+                                    <span class="card-sub-title">AXT Token Price</span>
+                                    <h4 class="font-mid text-dark">1 AXT = <span>0.75 USD</span></h4>
+                                </div>
+                                <div class="token-rate col-md-6 col-lg-12">
+                                    <span class="card-sub-title">Exchange Rate</span>
+                                    <span>1 USD = 0.8584 EUR = 0.7246 GBP</span>
+                                </div>
+                            </div>
+                            <div class="token-bonus-current">
+                                <div class="fake-class">
+                                    <span class="card-sub-title">Current Bonus</span>
+                                    <div class="h3 mb-0">25 %</div>
+                                </div>
+                                <div class="token-bonus-date">End at<br>30 Nov, 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-sales-progress mb-0">
+                        <div class="card-innr">
+                            <div class="card-head">
+                                <h5 class="card-title card-title-sm">Token Sales Progress</h5>
+                            </div>
+                            <ul class="progress-info">
+                                <li><span>Raised Amount <br></span>6,122,479 AXT</li>
+                                <li><span>Total Token <br></span>9,950,000 AXT</li>
+                            </ul>
+                            <div class="progress-bar no-had-soft">
+                                <div class="progress-percent" data-percent="61.5"></div>
+                            </div><span class="card-sub-title ucap mgb-0-5x">Sales End in</span>
+                            <div class="countdown-clock" data-date="2021/11/30 03:50:00"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <ng-template #content let-modal>
+                    <div class="modal-header" style="background: white;">
+                        <h4 class="modal-title" id="modal-basic-title">
+                            Add Wallet Address
+                        </h4>
+                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">
+                                ×
+                            </span>
+                        </button>
+                    </div>
+                    <div class="popup-body popup-body-md" style="background: white;">
+                        <h4 class="popup-title">Wallet Address</h4>
+                        <p>In order to receive your <strong>TLE</strong> token, please select your wallet address and
+                            you
+                            have to put the address below input box. You will receive <strong>TLE</strong> token to this
+                            address after the token sale end.</p>
+                        <div class="gaps-1x"></div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#wallet">Current
+                                    Wallet</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#request">Request for change</a></li>-->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="wallet">
+
+                                <input type="hidden" name="_token" value="t4lpzwGyylbQVE72FM7BmPqG0wGsO9bERo6TlLV7">
+                                <input type="hidden" name="action_type" value="wallet">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label">
+
+                                            <label for="swalllet" class="input-item-label">Wallet Type</label>
+
+                                            <div class="select">
+                                                <select name="property_type" id="property_type" class="minimal">
+                                                   
+                                                    <option value="1">BSC</option>
+                                                    <option value="2">BSC TEST NET</option>
+                                                    <option value="3">OTHER TYPE</option>
+                                                   
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-item input-with-label">
+                                    <label for="token-address" class="input-item-label">Wallet Address for receiving
+                                        token</label>
+                                    <div class="input-wrap">
+                                        <input class="input-bordered" type="text" id="token-address"
+                                            [(ngModel)]="tokenAddress" name="wallet_address"
+                                            value="0x246F4b668dd7fE55888EF50aF9F4aeF6C39d4Bdc" required=""
+                                            aria-required="true">
+                                    </div>
+                                    <span class="input-note">Note: You may loose your currency in case of wallet rules violation. See Wallet rules on corollary.</span>
+                                </div>
+
+                                <div class="d-sm-flex justify-content-between align-items-center">
+
+                                    <!-- <button type="submit" class="btn btn-primary" >Wallet Change</button> -->
+                                    <!-- <input type="button" class="btn btn-primary" value="Wallet Change" (click)="saveWallet() "> -->
+
+                                    <input type="button" class="btn btn-primary" value="Add Wallet Address" (click)="fetchClientWallet() ">
+
+                                </div>
+
+                                <!--</form>-->
+                            </div>
+                            <div class="tab-pane fade" id="request">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer"> 
+                        <button id="btn-addWallet" type="submit" class="btn btn-primary" (click)="fetchWallet()">
+                            Add Wallet
+                            </button>
+
+                             <input type="button" value="Call Function" (click)="fetchWallet()"> -->
+                        <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+                        Save
+                    </button> -->
+                        <!-- <input type="button" value="Add Wallet Address" (click)="fetchWallet() "> -->
+
+
+
+                        <!-- <input type="button" value="Save Wallet Address In Table" (click)="saveWallet() "> -->
+
+                        <!-- <input type="button" value="call prices" (click)="fetchPrices() "> -->
+
+
+
+
+                    <!-- </div> -->
+                </ng-template>
+
+                <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">
+                    Popup using Angular and Bootstrap
+                </button> -->
+
+
+            </div>
+        </div>
+    </div>

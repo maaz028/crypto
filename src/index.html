@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crypto</title>
+  <meta name="theme-color" content="#000000">
+	<meta name="description" content="Angebotsrechner">
+	<link rel="apple-touch-icon" href="logo192.png">
+	<link rel="manifest" href="assets/manifest.json">
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/fonts/feather/feather.css/index.html">
+  <link rel="shortcut icon" href="./assets/images/social_logo.png">
+    <!-- Bundle and Base CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=1930">
+    <link rel="stylesheet" href="assets/css/style-azalea.css?ver=1930" id="changeTheme">
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="assets/css/theme1.css?ver=1930">
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- <link rel="stylesheet" href="assets/token1.css"> -->
+<link rel="stylesheet" href="assets/token2.css">
+
+</head>
+<style>
+  .banner1{
+      display:flex;
+      background-color: rgb(20, 241, 149);
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  marquee button{
+      background: none;
+      border-radius: 10px;
+      background-color: rgb(9, 35, 73);
+      border: none;
+      color: white;
+      width: 150px;
+      height: 50px;
+      margin: 0px 10px;
+      transition: all 0.5s linear;
+      border: none;
+     
+ 
+  }
+  marquee button:hover{
+      background-color: #f42f54;
+      text-shadow: 0px 0px 10px black;
+  
+  }
+
+  marquee button img {
+      width: 33px;
+      margin: 0px 10px;
+  }
+ .span1h2
+ {
+     font-size: 28px;
+     /* font-weight: bold; */
+     padding: 0px 34px;
+ }
+ .span1{
+     font-size: 15px;
+     display: block;
+     width: 100px;
+     
+ }
+ .block1, .block2, .block3, .block4
+ {
+     display:flex;
+     /* padding: 10px 20px; */
+    color:black;
+ }
+ .block1, .block2, .block3{
+  border-right: 2px solid black;
+  
+ }
+
+
+ /* usersite */
+
+ .countdown-time
+    {
+        border: none;
+    }
+    .ikon-dashboard:before {
+        content: '' !important;
+    }
+
+    .sticky {
+        position: sticky !important;
+        top: 0 !important;
+        width: 100% !important;
+        z-index: 1000;
+    }
+
+    @media (min-width: 992px) {
+        .topbar-logo img {
+            height: 51px !important;
+        }
+    }
+
+    .iconImg {
+        width: 23px;
+        margin: 0px 5px;
+    }
+
+    .iconBtn {
+        color: #6b5fdc !important;
+    }
+
+    .user-links li a img {
+        width: 25px;
+        margin: 0px 10px;
+    }
+    .btn-primary {
+    background: #f42f54;
+    border-color: #f42f54;
+}
+
+.header-wrap
+{
+  width: 100%
+}
+.header-container{
+    max-width: 1274px !important;
+}
+
+.user-icon-nav li a
+{
+   color: white;
+    margin: 0px 10px;
+   padding: 20px 30px;
+  
+  
+}
+.user-icon-nav li a img{
+    width: 27px;
+    filter: invert(100%);
+}
+.user-icon-nav li a:hover
+{
+    border-radius: 10px;
+    background-color: #f42f54;
+    color: white;
+}
+/* .user-dropdown{
+    display: none;
+} */
+
+.side-bar
+{
+    position: fixed;
+    left: 0;
+    background-color: #0f1932;
+    height: 100vh;
+    box-shadow: 0px 0px 2px black;
+  
+}
+.page-content
+{
+  margin: auto;
+    padding: 56px 0px;
+}
+.img{
+    text-align: center;
+    
+}
+.img img{
+    width: 75px;
+}
+.img h4{
+    color: white;
+}
+.side-bar{
+    z-index: 10;
+}
+#resButton
+{
+    border: none;
+    background: none;
+}
+#resButton img
+{
+    width: 27px;
+    filter: invert(100%);
+}
+.page-content{
+    margin-top: 18px !important;
+}
+.icc{
+     width: 23px;
+     margin: 0px 5px;
+ }
+.button{
+    color: #6b5fdc;
+}
+.ikon-dashboard:before
+    {
+        content: '' !important;
+    }
+    .sticky{
+    position: sticky !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1000;
+}
+    @media (min-width: 992px)
+    {
+        .topbar-logo img
+{
+    height: 51px !important;
+}
+    }
+
+    .iconImg{
+        width: 23px;
+    margin: 0px 5px;
+    }
+    .iconBtn{
+    color: #6b5fdc !important;
+}
+.user-links li a img{
+    width: 25px;
+    margin: 0px 10px;
+}
+       .sticky{
+    position: sticky !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1000;
+}
+.select2-selection--single .select2-selection__arrow:after, .select2-selection--multiple .select2-selection__arrow:before
+{
+    content: '';
+    background: url('./assets/images/dropDown.png') !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 1 !important;
+    z-index: -1 !important;
+ 
+
+
+}
+    @media (min-width: 992px)
+    {
+        .topbar-logo img
+{
+    height: 51px !important;
+}
+    }
+
+    .iconImg{
+        width: 23px;
+    margin: 0px 5px;
+    }
+    .iconBtn{
+    color: #6b5fdc !important;
+}
+.close{
+    width: 34px;
+    opacity: 1 !important;
+ 
+   
+}
+.user-links li a img{
+    width: 25px;
+    margin: 0px 10px;
+}
+.message{
+    width: 20px;
+}
+.input-checkbox:checked ~ label:not(.error):after, .input-radio:checked ~ label:not(.error):after
+{
+    content: '';
+}
+.input-icon-left img{
+    width: 20px;
+    opacity: 1 !important;
+}
+.input-wrap img{
+    width: 20px;
+}
+.input-icon{
+    opacity: 1 !important;
+}
+.input-solid.input-solid.input-transparent{
+    border: 1px solid grey;
+}
+.input-solid.input-solid.input-transparent:hover,.input-solid.input-solid.input-transparent:focus{
+    border-color: aqua;
+    box-shadow: 0px 0px 5px aqua;
+}
+.has-dropdown>a:after {
+   content: '' !important;
+}
+.has-dropdown>a:after {
+   content: '' !important;
+}
+.page-content{
+    background-color: #e4e7ec;
+}
+
+</style>
+
+<body class="nk-body body-wider bg-theme">
+  <app-root></app-root>
+  <!-- <div class="preloader"><span class="spinner spinner-round"></span></div> -->
+
+
+  <!-- <script src="assets/js/main-site.js"></script> -->
+
+  <script type="text/javascript">
+//     if(window.location.href == 'http://localhost:4200/#/calculator')
+// {
+//     alert('event fired')
+ 
+// }
+  </script>
+  </body>
+  
+
+  <!-- JavaScript -->
+  <script src="assets/js/jquery.bundle.js?ver=1930"></script>
+  <script src="assets/js/scripts.js?ver=1930"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="https://app.tokenlite.net/assets/js/jquery.bundle.js?ver=20210913131"></script>
+	<script src="https://app.tokenlite.net/assets/js/script.js?ver=20210913131"></script>
+	<script src="https://app.tokenlite.net/assets/js/app.js?ver=20210913131"></script>
+  <script src="assets/js/calculator.js"></script>
+	<script type="text/javascript">
+  
+  
+	</script>
+  <script>
+    var base_url = "https://app.tokenlite.net",
+       user_wallet_address = "https://app.tokenlite.net/user/ajax/account/wallet-form",
+        csrf_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    var msg_wrong = "Something is Wrong!", msg_cancel_order = "Do you really cancel your order?", msg_unable_process = "Unable process request!", msg_sure = "Are you sure?", msg_unable_perform = "Unable to perform!", msg_use_modern_browser = "Please use a modern browser to properly view this template!", num_fmt = false;
+</script>
+<script src="https://app.tokenlite.net/assets/user-assests/assets/js/jquery.bundle.js?ver=20210913131"></script>
+<script src="https://app.tokenlite.net/assets/user-assests/assets/js/script.js?ver=20210913131"></script>
+<script src="https://app.tokenlite.net/assets/user-assests/assets/js/app.js?ver=20210913131"></script>
+<script src="../assets/js/export usernmae.js"></script>
+   <script>
+  if(window.location.href=='http://localhost:4200/contact-us')
+  {
+    console.log('working')
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(33.72347148089544, 73.04764648868984),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+  }
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgC0wQd1MMTjXBtD_NNhiYpPZJHAXeNZU&callback=myMap"></script>
+  <!-- <script src="./assets/js/ApiCallLogin.js"></script> -->
+  <script>
+    let profile = document.getElementById('profile')
+    let profile2 = document.getElementById('profile2')
+    let dropdown = document.querySelector('.user-dropdown')
+    let dropdown2 = document.querySelector('.user-dropdown2')
+//    let dropdown2 = document.querySelector('.dropdown2')
+//    dropdown2.style.display = 'none'
+
+    profile.addEventListener('click',()=>
+    {
+        if (dropdown.style.display=='none')
+        {
+            dropdown.style.display = ''
+        }
+        else
+        {
+            dropdown.style.display = 'none'
+        }
+
+    })
+
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+    let profileToggle = document.querySelector('.profile-toggle')
+    let profileToggle1 = document.querySelector('.profile1-toggle')
+    if ($(window).width() <= 990)
+    {
+       console.log('matched')
+        profileToggle.style.display = ''
+        profileToggle1.style.display = 'none'
+        dropdown2.style.display = 'none'
+
+    }
+    else
+    {
+        profileToggle.style.display = 'none'
+        profileToggle1.style.display = ''
+    }
+
+    profile2.addEventListener('click',()=>
+    {
+        if (dropdown2.style.display=='none')
+        {
+            dropdown2.style.display = ''
+        }
+        else
+        {
+            dropdown2.style.display = 'none'
+       
+        }
+    })
+
+  let sideBar = document.querySelector('.side-bar')
+  sideBar.style.display = 'none'
+  let resButon = document.getElementById('resButton')
+  resButon.addEventListener('click',()=>
+  {
+      if (sideBar.style.display == 'none')
+      {
+          sideBar.style.display = ''
+      }
+      else
+      {
+          sideBar.style.display = 'none'
+          console.log('i am else')
+      }
+  })
+  let flexSection = document.querySelector('.flexSection')
+  if($(window).width() == 360 )
+  {
+      
+      flexSection.style.width = '103%'
+  }
+</script>
+
+
+
+</html>

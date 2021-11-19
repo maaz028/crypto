@@ -1,0 +1,117 @@
+.ikon-dashboard:before {
+    content: '' !important;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000;
+}
+
+@media (min-width: 992px) {
+    .topbar-logo img {
+        height: 51px !important;
+    }
+}
+
+.iconImg {
+    width: 23px;
+    margin: 0px 5px;
+}
+
+.iconBtn {
+    color: #6b5fdc !important;
+}
+
+.user-links li a img {
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.white-bg {
+    background: none;
+}
+
+.ikon-dashboard:before {
+    content: '' !important;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000;
+}
+
+@media (min-width: 992px) {
+    .topbar-logo img {
+        height: 51px !important;
+    }
+}
+
+.iconImg {
+    width: 23px;
+    margin: 0px 5px;
+}
+
+.iconBtn {
+    color: #6b5fdc !important;
+}
+
+.user-links li a img {
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.mb-1 select {
+    border: 1px solid grey;
+    width: auto !important;
+    padding: 0px !important;
+    height: 25px !important;
+}
+
+#DEgermen,
+#ENenglish {
+    border: none;
+    padding: 7px !important;
+    background-color: #f42f54;
+}
+
+.ti.ti-close {
+    line-height: 33px !important;
+
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.btn-primary:disabled{
+    background-color: red;
+    border-color: red;
+}
+.abort
+{
+    background-color: #f42f54 !important;
+}
+.abort:hover{
+    background-color: skyblue !important;
+    border-color: skyblue !important;
+}
+.pt-5{
+    padding-top: 0px !important;
+}
+
+/* .style-success {
+    color: $primary-text;
+    background-color: $primary;
+  }
+  .style-success .mat-simple-snackbar-action  {
+    color: $primary-text;
+  }
+  .style-error {
+    color: $warn-text;
+    background-color: $warn;
+  } */
+/* .mat-simple-snackbar{
+    color: red !important;
+} */

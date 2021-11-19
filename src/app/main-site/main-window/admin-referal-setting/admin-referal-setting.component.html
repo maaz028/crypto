@@ -1,0 +1,151 @@
+<div class="page-content " style="background-color: #f7fafdeb;  ">
+    <div class="container">
+        <div class="row">
+            <div class="main-content col-lg-12">
+                <a href="ReferralSettings.html" class="btn btn-warning-alt btn-between w-100 mgb-1-5x user-wallet">Please setup your application mail settings</a>
+	<div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+
+                <div class="content-area card">
+                    <div class="card-innr">
+                        <div class="card-head">
+                            <h4 class="card-title">Referral Settings</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Manage your referral system to boost your token sales. Once enable referral system option, it will start tracking invitation link also user/contributor able to see invitation link on their profile. They can share any where to invite more people to join on your platform. You can specify how much bonus a user can get.</p>
+                            <p class="text-head"><strong>Note: To active referral system completly, you have set Show in Visibility by edit Referral page from <a href="ReferralSettings.html">Manage > Page</a></strong></p>
+                        </div>
+                        <div class="gaps-2x"></div>
+                        <div class="card-text ico-setting setting-token-referral">
+                            <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" method="POST" id="referral_setting_form" class="validate-modern">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="input-item input-with-label">
+                                            <label class="input-item-label">Referral System</label>
+                                            <div class="input-wrap input-wrap-switch">
+                                                <input class="input-switch switch-toggle" data-switch="switch-to-referral" name="referral_system" type="checkbox" checked id="referral-system-enable">
+                                                <label for="referral-system-enable"><span>Disable</span><span class="over">Enable</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="switch-content switch-to-referral">
+                                            
+                                            <h5 class="card-title-sm text-secondary">Invited User <small class="ucap text-primary">(who joined)</small></h5>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Referral Bonus Allowed</label>
+                                                        <div class="input-wrap">
+                                                            <select id="bonus_applicable" style="display: none;" class="select select-block select-bordered " name="referral_allow_join">
+                                                                <option  value="all_time">For All Transactions</option>
+                                                                                                                                <option value="1">Max  1 Transaction</option>
+                                                                                                                                <option value="2">Max  2 Transaction</option>
+                                                                                                                                <option value="3">Max  3 Transaction</option>
+                                                                                                                                <option value="4">Max  4 Transaction</option>
+                                                                                                                                <option value="5">Max  5 Transaction</option>
+                                                                                                                                <option value="10">Max  10 Transaction</option>
+                                                                                                                            </select>
+                                                        </div>
+                                                        <span class="input-note">Limit with transaction, how many times bonus will add into account for purchase.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Offering Type</label>
+                                                        <div class="input-wrap">
+                                                            <select class="select select-block select-bordered" style="display: none;" name="referral_calc_join">
+                                                                <option selected value="percent">Percentage</option>
+                                                                <option value="fixed">Fixed/Flat</option>
+                                                            </select>
+                                                        </div>                                        
+                                                        <span class="input-note">Choose whether the referral bonus will calculated as percentage or fixed amount.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-3">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Bonus - Offer Amount</label>
+                                                        <div class="input-wrap wide-15">
+                                                            <input type="number" class="input-bordered" min="0" name="referral_bonus_join" value="10">
+                                                            <span class="input-hint input-hint-lg"><span>&nbsp;&nbsp;</span></span>
+                                                        </div>
+                                                        <div class="input-note">Specify bonus amount for who joined.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-3">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Show Info to User</label>
+                                                        <div class="input-wrap input-wrap-switch">
+                                                            <input class="input-switch" name="referral_info_show" type="checkbox" checked id="info-show-enable">
+                                                            <label for="info-show-enable"><span>Hide</span><span class="over">Show</span></label>
+                                                        </div>
+                                                        <div class="input-note">Referral info show to user on signup page, so the user can see who refer him.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title-sm text-secondary">Referral User <small class="ucap text-primary">(who referred)</small></h5>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Referral Bonus Allowed</label>
+                                                        <div class="input-wrap">
+                                                            <select id="bonus_applicable" class="select select-block select-bordered " name="referral_allow">
+                                                                <option selected value="all_time">For All Transactions</option>
+                                                                                                                                <option value="5000">Max  5,000 Tokens</option>
+                                                                                                                                <option value="10000">Max  10,000 Tokens</option>
+                                                                                                                                <option value="25000">Max  25,000 Tokens</option>
+                                                                                                                                <option value="50000">Max  50,000 Tokens</option>
+                                                                                                                                <option value="75000">Max  75,000 Tokens</option>
+                                                                                                                                <option value="100000">Max  100,000 Tokens</option>
+                                                                                                                                <option value="250000">Max  250,000 Tokens</option>
+                                                                                                                                <option value="500000">Max  500,000 Tokens</option>
+                                                                                                                                <option value="1000000">Max  1,000,000 Tokens</option>
+                                                                                                                                <option value="5000000">Max  5,000,000 Tokens</option>
+                                                                                                                                <option value="10000000">Max  10,000,000 Tokens</option>
+                                                                                                                                <option value="100000000">Max  100,000,000 Tokens</option>
+                                                                                                                            </select>
+                                                        </div>
+                                                        <span class="input-note">Limit with referral bonus amount, how much bonus will add into account for invite someone.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Offering Type</label>
+                                                        <div class="input-wrap">
+                                                            <select class="select select-block select-bordered" name="referral_calc">
+                                                                <option selected value="percent">Percentage</option>
+                                                                <option value="fixed">Fixed/Flat</option>
+                                                            </select>
+                                                        </div>                                        
+                                                        <span class="input-note">Choose whether the referral bonus will calculated as percentage or fixed amount.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-3">
+                                                    <div class="input-item input-with-label">
+                                                        <label class="input-item-label">Bonus - Offer Amount</label>
+                                                        <div class="input-wrap wide-15">
+                                                            <input type="number" class="input-bordered" min="0" name="referral_bonus" value="10">
+                                                            <span class="input-hint input-hint-lg"><span>&nbsp;&nbsp;</span></span>
+                                                        </div>
+                                                        <div class="input-note">Specify bonus amount for who referred.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    </div>
+                                    </div>                                    
+                                </div>
+                                <div class="gaps-1x"></div>
+                                <div class="d-flex">
+                                    <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="referral">
+                                    <button class="btn btn-primary save-disabled" type="submit" disabled><span>Update</span></button>
+                                </div>
+                                <div class="gaps-2x"></div>
+                                <div class="hint"><em><strong>Note:</strong> Bonus will automatically adjust after each successfull transaction. The token balance add into contributor account who referred (and/or who join).</em></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

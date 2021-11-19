@@ -1,0 +1,20 @@
+/* .banner{
+    padding-top: 72px !important;
+} */
+.mimg{
+    filter: invert(100%);
+}
+.header-main{
+    margin: -15px 0px !important;
+}
+.status-info{
+    background: none !important;
+}
+.fz-8{
+    color: #637da2 !important;
+}
+
+.progress-percent{
+    background: #f42f54 !important;
+}
+

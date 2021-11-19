@@ -1,0 +1,578 @@
+<div class="page-content"  style="background-color: #f7fafdeb;  ">
+    <div class="container">
+        <div class="row">
+            <div class="main-content col-lg-12">
+                                <a href="WebSitesettings.html" class="btn btn-warning-alt btn-between w-100 mgb-1-5x user-wallet">Please setup your application mail settings</a>
+	<div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+
+                <div class="content-area card">
+                    <div class="card-innr">
+                        <div class="card-head">
+                            <h4 class="card-title">Website Settings</h4>
+                        </div>
+                        <ul class="nav nav-tabs nav-tabs-line" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#siteinfo">Site Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#general">General Settings</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#social_links">Social Links</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#social_api">API Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#custom_code">Advanced</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="website-setting">
+                            <div class="tab-pane fade show active " id="siteinfo">
+                                <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" class="validate-modern" method="POST" id="update_settings">
+                                    <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="site_info">
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Website Information</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Site Name</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" required="" type="text" data-validation="required" name="site_name" value="Axtract">
+                                                </div>
+                                                <span class="input-note">Enter name of website name.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Site Email</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" required="" type="text" data-validation="required" name="site_email" value="info@yourdomain.com">
+                                                </div>
+                                                <span class="input-note">Using for contact and sending email.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Site Copyright</label>
+                                                <input class="input-bordered" type="text" name="site_copyright" value="2021 ~All Right Reserved.">
+                                                <span class="input-note">Copyright text for site.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Contact Address</label>
+                                                <input class="input-bordered" type="text" data-validation="required" name="site_support_address" value="">
+                                                <span class="input-note">Enter the support address.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Contact Phone</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" minlength="10" type="text" data-validation="required" name="site_support_phone" value="">
+                                                    <span class="input-note">Using for contact and support.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Support Email</label>
+                                                <input class="input-bordered" type="text" name="site_support_email" value="">
+                                                <span class="input-note">Contact and Support Email.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Main Site URL</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" name="main_website_url" value="">
+                                                </div>
+                                                <span class="input-note">Set your main website url.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn btn-primary save-disabled" disabled>Update</button>
+                                    </div>
+                                    <div class="gaps-0-5x"></div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade " id="general">
+                                <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" class="validate-modern" method="post" id="update_general_settings">
+                                    <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="general">
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Application Settings</h5>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label for="site-timezone" class="input-item-label">Time Zone</label>
+                                                <select name="site_timezone" id="site-timezone" class="select select-block select-bordered">
+                                                                                                        <option value="Pacific/Midway" >(UTC-11:00) Midway Island</option>
+                                                                                                        <option value="Pacific/Samoa" >(UTC-11:00) Samoa</option>
+                                                                                                        <option value="Pacific/Honolulu" >(UTC-10:00) Hawaii</option>
+                                                                                                        <option value="US/Alaska" >(UTC-09:00) Alaska</option>
+                                                                                                        <option value="America/Los_Angeles" >(UTC-08:00) Pacific Time (US &amp;amp; Canada)</option>
+                                                                                                        <option value="America/Tijuana" >(UTC-08:00) Tijuana</option>
+                                                                                                        <option value="US/Arizona" >(UTC-07:00) Arizona</option>
+                                                                                                        <option value="America/Chihuahua" >(UTC-07:00) La Paz</option>
+                                                                                                        <option value="America/Mazatlan" >(UTC-07:00) Mazatlan</option>
+                                                                                                        <option value="US/Mountain" >(UTC-07:00) Mountain Time (US &amp;amp; Canada)</option>
+                                                                                                        <option value="America/Managua" >(UTC-06:00) Central America</option>
+                                                                                                        <option value="US/Central" >(UTC-06:00) Central Time (US &amp;amp; Canada)</option>
+                                                                                                        <option value="America/Mexico_City" >(UTC-06:00) Mexico City</option>
+                                                                                                        <option value="America/Monterrey" >(UTC-06:00) Monterrey</option>
+                                                                                                        <option value="Canada/Saskatchewan" >(UTC-06:00) Saskatchewan</option>
+                                                                                                        <option value="America/Bogota" >(UTC-05:00) Quito</option>
+                                                                                                        <option value="US/Eastern" >(UTC-05:00) Eastern Time (US &amp;amp; Canada)</option>
+                                                                                                        <option value="US/East-Indiana" >(UTC-05:00) Indiana (East)</option>
+                                                                                                        <option value="America/Lima" >(UTC-05:00) Lima</option>
+                                                                                                        <option value="Canada/Atlantic" >(UTC-04:00) Atlantic Time (Canada)</option>
+                                                                                                        <option value="America/Caracas" >(UTC-04:30) Caracas</option>
+                                                                                                        <option value="America/La_Paz" >(UTC-04:00) La Paz</option>
+                                                                                                        <option value="America/Santiago" >(UTC-04:00) Santiago</option>
+                                                                                                        <option value="Canada/Newfoundland" >(UTC-03:30) Newfoundland</option>
+                                                                                                        <option value="America/Sao_Paulo" >(UTC-03:00) Brasilia</option>
+                                                                                                        <option value="America/Argentina/Buenos_Aires" >(UTC-03:00) Georgetown</option>
+                                                                                                        <option value="America/Godthab" >(UTC-03:00) Greenland</option>
+                                                                                                        <option value="America/Noronha" >(UTC-02:00) Mid-Atlantic</option>
+                                                                                                        <option value="Atlantic/Azores" >(UTC-01:00) Azores</option>
+                                                                                                        <option value="Atlantic/Cape_Verde" >(UTC-01:00) Cape Verde Is.</option>
+                                                                                                        <option value="Africa/Casablanca" >(UTC+00:00) Casablanca</option>
+                                                                                                        <option value="Europe/London" >(UTC+00:00) London</option>
+                                                                                                        <option value="Etc/Greenwich" >(UTC+00:00) Greenwich Mean Time : Dublin</option>
+                                                                                                        <option value="Europe/Lisbon" >(UTC+00:00) Lisbon</option>
+                                                                                                        <option value="Africa/Monrovia" >(UTC+00:00) Monrovia</option>
+                                                                                                        <option value="UTC" selected>(UTC+00:00) UTC</option>
+                                                                                                        <option value="Europe/Amsterdam" >(UTC+01:00) Amsterdam</option>
+                                                                                                        <option value="Europe/Belgrade" >(UTC+01:00) Belgrade</option>
+                                                                                                        <option value="Europe/Berlin" >(UTC+01:00) Bern</option>
+                                                                                                        <option value="Europe/Bratislava" >(UTC+01:00) Bratislava</option>
+                                                                                                        <option value="Europe/Brussels" >(UTC+01:00) Brussels</option>
+                                                                                                        <option value="Europe/Budapest" >(UTC+01:00) Budapest</option>
+                                                                                                        <option value="Europe/Copenhagen" >(UTC+01:00) Copenhagen</option>
+                                                                                                        <option value="Europe/Ljubljana" >(UTC+01:00) Ljubljana</option>
+                                                                                                        <option value="Europe/Madrid" >(UTC+01:00) Madrid</option>
+                                                                                                        <option value="Europe/Paris" >(UTC+01:00) Paris</option>
+                                                                                                        <option value="Europe/Prague" >(UTC+01:00) Prague</option>
+                                                                                                        <option value="Europe/Rome" >(UTC+01:00) Rome</option>
+                                                                                                        <option value="Europe/Sarajevo" >(UTC+01:00) Sarajevo</option>
+                                                                                                        <option value="Europe/Skopje" >(UTC+01:00) Skopje</option>
+                                                                                                        <option value="Europe/Stockholm" >(UTC+01:00) Stockholm</option>
+                                                                                                        <option value="Europe/Vienna" >(UTC+01:00) Vienna</option>
+                                                                                                        <option value="Europe/Warsaw" >(UTC+01:00) Warsaw</option>
+                                                                                                        <option value="Africa/Lagos" >(UTC+01:00) West Central Africa</option>
+                                                                                                        <option value="Europe/Zagreb" >(UTC+01:00) Zagreb</option>
+                                                                                                        <option value="Europe/Athens" >(UTC+02:00) Athens</option>
+                                                                                                        <option value="Europe/Bucharest" >(UTC+02:00) Bucharest</option>
+                                                                                                        <option value="Africa/Cairo" >(UTC+02:00) Cairo</option>
+                                                                                                        <option value="Africa/Harare" >(UTC+02:00) Harare</option>
+                                                                                                        <option value="Europe/Helsinki" >(UTC+02:00) Kyiv</option>
+                                                                                                        <option value="Europe/Istanbul" >(UTC+02:00) Istanbul</option>
+                                                                                                        <option value="Asia/Jerusalem" >(UTC+02:00) Jerusalem</option>
+                                                                                                        <option value="Africa/Johannesburg" >(UTC+02:00) Pretoria</option>
+                                                                                                        <option value="Europe/Riga" >(UTC+02:00) Riga</option>
+                                                                                                        <option value="Europe/Sofia" >(UTC+02:00) Sofia</option>
+                                                                                                        <option value="Europe/Tallinn" >(UTC+02:00) Tallinn</option>
+                                                                                                        <option value="Europe/Vilnius" >(UTC+02:00) Vilnius</option>
+                                                                                                        <option value="Asia/Baghdad" >(UTC+03:00) Baghdad</option>
+                                                                                                        <option value="Asia/Kuwait" >(UTC+03:00) Kuwait</option>
+                                                                                                        <option value="Europe/Minsk" >(UTC+03:00) Minsk</option>
+                                                                                                        <option value="Africa/Nairobi" >(UTC+03:00) Nairobi</option>
+                                                                                                        <option value="Asia/Riyadh" >(UTC+03:00) Riyadh</option>
+                                                                                                        <option value="Europe/Volgograd" >(UTC+03:00) Volgograd</option>
+                                                                                                        <option value="Asia/Tehran" >(UTC+03:30) Tehran</option>
+                                                                                                        <option value="Asia/Muscat" >(UTC+04:00) Muscat</option>
+                                                                                                        <option value="Asia/Baku" >(UTC+04:00) Baku</option>
+                                                                                                        <option value="Europe/Moscow" >(UTC+04:00) St. Petersburg</option>
+                                                                                                        <option value="Asia/Tbilisi" >(UTC+04:00) Tbilisi</option>
+                                                                                                        <option value="Asia/Yerevan" >(UTC+04:00) Yerevan</option>
+                                                                                                        <option value="Asia/Kabul" >(UTC+04:30) Kabul</option>
+                                                                                                        <option value="Asia/Karachi" >(UTC+05:00) Karachi</option>
+                                                                                                        <option value="Asia/Tashkent" >(UTC+05:00) Tashkent</option>
+                                                                                                        <option value="Asia/Calcutta" >(UTC+05:30) Sri Jayawardenepura</option>
+                                                                                                        <option value="Asia/Kolkata" >(UTC+05:30) Kolkata</option>
+                                                                                                        <option value="Asia/Katmandu" >(UTC+05:45) Kathmandu</option>
+                                                                                                        <option value="Asia/Almaty" >(UTC+06:00) Almaty</option>
+                                                                                                        <option value="Asia/Dhaka" >(UTC+06:00) Dhaka</option>
+                                                                                                        <option value="Asia/Yekaterinburg" >(UTC+06:00) Ekaterinburg</option>
+                                                                                                        <option value="Asia/Rangoon" >(UTC+06:30) Rangoon</option>
+                                                                                                        <option value="Asia/Bangkok" >(UTC+07:00) Hanoi</option>
+                                                                                                        <option value="Asia/Jakarta" >(UTC+07:00) Jakarta</option>
+                                                                                                        <option value="Asia/Novosibirsk" >(UTC+07:00) Novosibirsk</option>
+                                                                                                        <option value="Asia/Hong_Kong" >(UTC+08:00) Hong Kong</option>
+                                                                                                        <option value="Asia/Chongqing" >(UTC+08:00) Chongqing</option>
+                                                                                                        <option value="Asia/Krasnoyarsk" >(UTC+08:00) Krasnoyarsk</option>
+                                                                                                        <option value="Asia/Kuala_Lumpur" >(UTC+08:00) Kuala Lumpur</option>
+                                                                                                        <option value="Australia/Perth" >(UTC+08:00) Perth</option>
+                                                                                                        <option value="Asia/Singapore" >(UTC+08:00) Singapore</option>
+                                                                                                        <option value="Asia/Taipei" >(UTC+08:00) Taipei</option>
+                                                                                                        <option value="Asia/Ulan_Bator" >(UTC+08:00) Ulaan Bataar</option>
+                                                                                                        <option value="Asia/Urumqi" >(UTC+08:00) Urumqi</option>
+                                                                                                        <option value="Asia/Irkutsk" >(UTC+09:00) Irkutsk</option>
+                                                                                                        <option value="Asia/Tokyo" >(UTC+09:00) Tokyo</option>
+                                                                                                        <option value="Asia/Seoul" >(UTC+09:00) Seoul</option>
+                                                                                                        <option value="Australia/Adelaide" >(UTC+09:30) Adelaide</option>
+                                                                                                        <option value="Australia/Darwin" >(UTC+09:30) Darwin</option>
+                                                                                                        <option value="Australia/Brisbane" >(UTC+10:00) Brisbane</option>
+                                                                                                        <option value="Australia/Canberra" >(UTC+10:00) Canberra</option>
+                                                                                                        <option value="Pacific/Guam" >(UTC+10:00) Guam</option>
+                                                                                                        <option value="Australia/Hobart" >(UTC+10:00) Hobart</option>
+                                                                                                        <option value="Australia/Melbourne" >(UTC+10:00) Melbourne</option>
+                                                                                                        <option value="Pacific/Port_Moresby" >(UTC+10:00) Port Moresby</option>
+                                                                                                        <option value="Australia/Sydney" >(UTC+10:00) Sydney</option>
+                                                                                                        <option value="Asia/Yakutsk" >(UTC+10:00) Yakutsk</option>
+                                                                                                        <option value="Asia/Vladivostok" >(UTC+11:00) Vladivostok</option>
+                                                                                                        <option value="Pacific/Auckland" >(UTC+12:00) Wellington</option>
+                                                                                                        <option value="Pacific/Fiji" >(UTC+12:00) Marshall Is.</option>
+                                                                                                        <option value="Pacific/Kwajalein" >(UTC+12:00) International Date Line West</option>
+                                                                                                        <option value="Asia/Kamchatka" >(UTC+12:00) Kamchatka</option>
+                                                                                                        <option value="Asia/Magadan" >(UTC+12:00) Solomon Is.</option>
+                                                                                                        <option value="Pacific/Tongatapu" >(UTC+13:00) Nuku&#039;alofa</option>
+                                                                                                    </select>
+                                                <span class="input-note">Set application timezone.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Date Format</label>
+                                                <select name="site_date_format" id="site_date_format" class="select select-block select-bordered">
+                                                    <option selected value="d M, Y">21 Oct, 2021</option>
+                                                    <option  value="M d, Y">Oct 21, 2021</option>
+                                                    <option  value="d M, y">21 Oct, 21</option>
+                                                    <option  value="m-d-Y">10-21-2021</option>
+                                                    <option  value="d-m-Y">21-10-2021</option>
+                                                    <option  value="Y-m-d">2021-10-21</option>
+                                                    <option  value="m-d-y">10-21-21</option>
+                                                    <option  value="y-m-d">21-10-21</option>
+                                                </select>
+                                                <span class="input-note">Application date format</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-lg-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Time Format</label>
+                                                <div class="input-wrap input-wrap-switch">
+                                                    <select name="site_time_format" id="site_time_format" class="select select-block select-bordered">
+                                                        <option selected value="h:i A">11:12 AM</option>
+                                                        <option  value="H:i">15:30 (24 hr)</option>
+                                                        <option  value="H:i:s">15:30:25 (24 hr)</option>
+                                                    </select>
+                                                </div>
+                                                <span class="input-note">Application time format</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div><div class="sap"></div><div class="gaps-3x"></div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Admin Theme</label>
+                                                <div class="input-wrap">
+                                                    <select name="theme_admin" id="theme_admin" class="select select-block select-bordered">
+                                                                                                                <option selected value="style">Default</option>
+                                                                                                                <option value="style-blue">Azure Blue</option>
+                                                                                                                <option value="style-green">Teal Green</option>
+                                                                                                                <option value="style-charcoal">Charcoal</option>
+                                                                                                                <option value="style-coral">Coral Red</option>
+                                                                                                                <option value="style-gold">Fire Gold</option>
+                                                                                                                <option value="style-tangerine">Tangerine Orange</option>
+                                                                                                                <option value="style-watermelon">Watermelon Green</option>
+                                                                                                            </select>
+                                                </div>
+                                                <span class="input-note">Style scheme for admin area.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Auth Page Layout</label>
+                                                <div class="input-wrap">
+                                                    <select name="theme_auth_layout" id="theme_auth_layout" class="select select-block select-bordered">
+                                                        <option selected value="default">Default</option>
+                                                        <option  value="alter">Alter Side</option>
+                                                        <option  value="center-light">Center Light</option>
+                                                        <option  value="center-dark">Center Dark</option>
+                                                    </select>
+                                                </div>
+                                                <span class="input-note">Login/Registration page design layout.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-lg-6 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">User Panel Theme</label>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="input-wrap">
+                                                            <select name="theme_user" id="theme_user" class="select select-block select-bordered">
+                                                                                                                                <option selected value="style">Default</option>
+                                                                                                                                <option value="style-blue">Azure Blue</option>
+                                                                                                                                <option value="style-green">Teal Green</option>
+                                                                                                                                <option value="style-charcoal">Charcoal</option>
+                                                                                                                                <option value="style-coral">Coral Red</option>
+                                                                                                                                <option value="style-gold">Fire Gold</option>
+                                                                                                                                <option value="style-tangerine">Tangerine Orange</option>
+                                                                                                                                <option value="style-watermelon">Watermelon Green</option>
+                                                                                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="input-wrap input-wrap-checkbox mgt-1x">
+                                                            <input class="input-checkbox input-checkbox-sm" type="checkbox" name="theme_custom" id="theme_custom" >
+                                                            <label for="theme_custom">Enable Custom Stylesheet</label>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                                <span class="input-note">Style scheme for user area.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Maintenance Mode</label>
+                                                <div class="input-wrap input-wrap-switch">
+                                                    <input class="input-switch switch-toggle" data-switch="switch-to-maintenance" type="checkbox" name="site_maintenance" id="site_maintenance" >
+                                                    <label for="site_maintenance">Enable</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="switch-content switch-to-maintenance">
+                                                <div class="input-item input-with-label">
+                                                    <label class="input-item-label">Maintenance Text</label>
+                                                    <div class="input-wrap">
+                                                        <textarea class="input-bordered" name="site_maintenance_text" id="site_maintenance_text" cols="30" rows="2"></textarea>
+                                                    </div>
+                                                    <div class="input-note">Admin Login on maintenance mode: <strong class="text-primary">https://axtract.co.uk</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn btn-primary save-disabled" disabled>Update</button>
+                                    </div>
+                                    <div class="gaps-0-5x"></div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="social_links">
+                                <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" class="validate-modern" method="post" id="update_social_settings">
+                                                                        <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="social_links">
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Social Profile Links</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label pb-0">
+                                                <div class="input-wrap input-wrap-switch">
+                                                    <input class="input-switch input-switch-sm" type="checkbox" name="social[onsite]" id="social-on-site" checked>
+                                                    <label for="social-on-site">Show on User/Client Area</label>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <div class="input-wrap input-wrap-switch">
+                                                    <input class="input-switch input-switch-sm" type="checkbox" name="social[onlogin]" id="social-on-login-reg" checked>
+                                                    <label for="social-on-login-reg">Show on Login/Register Page</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sap"></div><div class="gaps-2x"></div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Facebook</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://www.facebook.com/user-name" data-validation="required" name="social[facebook]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Twitter</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://twitter.com/user-name" data-validation="required" name="social[twitter]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Linked In</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://www.linkedin.com/user-name" data-validation="required" name="social[linkedin]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Github</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://www.github.com/user-name" data-validation="required" name="social[github]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Medium</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://www.medium.com/@user-name" data-validation="required" name="social[medium]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Youtube</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://www.youtube.com/user-name" data-validation="required" name="social[youtube]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-sm-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Telegram</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="url" placeholder="https://telegram.org/@user-name" data-validation="required" name="social[telegram]" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn btn-primary save-disabled" disabled>Update</button>
+                                    </div>
+                                    <div class="gaps-0-5x"></div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="social_api">
+                                <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" method="post" class="validate-modern" id="update_api_settings" autocomplete="off">
+                                    <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="api_credetial">
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Google reCaptcha v3</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Site Key</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="text" name="recaptcha_site_key" autocomplete="new-code-recap-site" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Secret Key</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="text" name="recaptcha_secret_key" autocomplete="new-code-recap-secret" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-note pt-0">Get the API Key <strong class="text-primary"><a href="https://axtract.co.uk" target="_blank">https://axtract.co.uk</a></strong></div>
+                                            <div class="gaps-2-5x"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Social Login API Credentials</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Facebook Client ID</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="text" name="api_fb_id" autocomplete="off" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Facebook Client Secret</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="password" name="api_fb_secret" autocomplete="new-password" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-note pt-0">In Facebook App set redirect URL: <strong class="text-primary">https://axtract.co.uk</strong></div>
+                                            <div class="gaps-2-5x"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Google Client ID</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="text" name="api_google_id" autocomplete="new-code-api-gid" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-sm-12 col-md-6">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Google Client Secret</label>
+                                                <div class="input-wrap">
+                                                    <input class="input-bordered" type="password" name="api_google_secret" autocomplete="new-code-api-gsecret" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-note pt-0">In Google App set redirect URL: <strong class="text-primary">https://axtract.co.uk</strong></div>
+                                            <div class="gaps-2-5x"></div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn btn-primary save-disabled" disabled>Update</button>
+                                    </div>
+                                    <div class="gaps-0-5x"></div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="custom_code">
+                                <form action="https://demo2.aluxhomes.org/public/admin/ajax/settings/update" method="post" class="validate-modern" id="update_code_settings" autocomplete="off">
+                                    <input type="hidden" name="_token" value="tzlhjgskHsP1DNGNyYyJeHluNvqJDT6NvA5pHHMv">                                    <input type="hidden" name="type" value="custom_code">
+                                    <div class="d-flex align-items-center justify-content-between pdb-1x">
+                                        <h5 class="card-title-md text-primary">Header & Footer Code</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Header Code</label>
+                                                <div class="input-wrap">
+                                                    <textarea name="site_header_code" id="header-code" cols="30" rows="5" class="input-bordered input-textarea"></textarea>
+                                                </div>
+                                                <div class="input-note">You can use this for analytics code. Please enter full code including &lt;script&gt; tag.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="input-item input-with-label">
+                                                <label class="input-item-label">Footer Code</label>
+                                                <div class="input-wrap">
+                                                    <textarea name="site_footer_code" id="footer-code" cols="30" rows="5" class="input-bordered input-textarea"></textarea>
+                                                </div>
+                                                <div class="input-note">You can use this for chat or third-party tracker codes. Please enter full code including &lt;script&gt; tag.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-1x"></div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="btn btn-primary save-disabled" disabled>Update</button>
+                                    </div>
+                                    <div class="gaps-0-5x"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,123 @@
+.img-wrapper {
+  text-align: center;
+}
+
+.img-wrapper img {
+  height: auto;
+  max-height: 360px; 
+}
+
+.input-word-group {
+  border-right: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.MuiSlider-rail,
+.MuiSlider-track {
+  height: 1rem !important;
+  border-radius: 8px !important;
+}
+
+.MuiSlider-rail {
+  background-color: #e6e6e6 !important;
+}
+
+.MuiSlider-track {
+  background-color: #01a3e0 !important;
+}
+
+.MuiSlider-thumb {
+  height: 2.75rem !important;
+  width: 2.75rem !important;
+  margin-top: -15px !important;
+  margin-left: -21px !important;
+  background-color: #01a3e0 !important;
+  box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.MuiSlider-thumb.MuiSlider-active,
+.MuiSlider-thumb.Mui-focusVisible,
+.MuiSlider-thumb:hover {
+  box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.MuiSlider-mark {
+  width: 0px !important;
+}
+
+.MuiSlider-markLabel {
+  top: 42px !important;
+  color: #6e84a3 !important;
+}
+
+/* .MuiSlider-markLabel {
+  transform: translateX(0) !important;
+} */
+
+.bg-custom-success {
+  background-color: #d71946 !important;
+}
+
+.bg-custom-info {
+  background-color: #00a4e0 !important;
+}
+
+.text-info {
+  color: #00a4e0 !important;
+}
+
+.text-success {
+  color: #d71946 !important;
+}
+
+.text-info-secondary {
+  color: #d7e4f7 !important;
+}
+
+.text-success-secondary {
+  color: #587347 !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.basic-data {
+  background-color: #b8aca5 !important;
+}
+
+.insurance-offer {
+  background-color: #455561 !important;
+}
+
+u {
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #01a3e0;
+}
+
+.blue-h2 {
+  color: #01a3e0;
+}
+
+.btn-primary {
+  border-color: #01a3e0;
+  background-color: #01a3e0;
+}
+
+.btn-primary:hover {
+  border-color: #80dcfe;
+  background-color: #80dcfe;
+}
+
+.btn-outline-primary {
+  color: #01a3e0;
+  border-color: #01a3e0;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #80dcfe;
+  background-color: #80dcfe;
+}

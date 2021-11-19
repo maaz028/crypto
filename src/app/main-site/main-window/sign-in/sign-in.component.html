@@ -1,0 +1,49 @@
+
+    <div class="container py-4">
+        <div class="ath-body bg-theme tc-light">
+            <h5 class="ath-heading title">Sign in <small class="tc-default">with your ODI
+                    Account</small></h5>
+            <form #LoginForm="ngForm"  >
+                <div class="field-item">
+                    <div class="field-wrap">
+                        <input type="email" ngModel name="Email" class="input-bordered" placeholder="Your Email" required email #Email="ngModel" >
+                        <small class="form-text text-muted" *ngIf="Email.touched && !Email.valid">Enter Valid Email</small>
+                    </div>
+                </div>
+                <div class="field-item">
+                    <div class="field-wrap">
+                        <input type="password" ngModel name="Password" class="input-bordered" placeholder="Password" required >
+                        
+                    </div>
+                </div>
+                <div class="field-item d-flex justify-content-between align-items-center">
+                    <div class="field-item pb-0">
+                        <input class="input-checkbox" name="remember" id="remember-me-100" type="checkbox">
+                        <label for="remember-me-100">Remember Me</label>
+                    </div>
+                    <div class="forget-link fz-6">
+                        <a href="#" data-toggle="modal" data-dismiss="modal"
+                            data-target="#reset-popup">Forgot password?</a>
+                    </div>
+                </div>
+                <button 
+                
+                    class="btn btn-primary btn-block "  >Sign In </button>
+                    <div class="spinner-border " role="status" style="text-align: center;margin: auto;display: block;">
+                        <span class="visually-hidden"></span>
+                      </div>
+            </form>
+            <div class="sap-text"><span>Or Sign In With</span></div>
+    
+            <ul class="row gutter-20px gutter-vr-20px">
+                <li class="col"><a href="#" class="btn btn-md btn-facebook btn-block"><em
+                            class="icon fab fa-facebook-f"></em><span>Facebook</span></a></li>
+                <li class="col"><a href="#" class="btn btn-md btn-google btn-block"><em
+                            class="icon fab fa-google"></em><span>Google</span></a></li>
+            </ul>
+            <div class="ath-note text-center">
+                Don’t have an account? <a href="#" data-toggle="modal" data-dismiss="modal"
+                    data-target="#register-popup"> <strong>Sign up here</strong></a>
+            </div>
+        </div>
+    </div>

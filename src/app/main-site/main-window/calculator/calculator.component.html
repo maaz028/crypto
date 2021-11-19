@@ -1,0 +1,972 @@
+<div id="google_translate_element" ></div>
+
+
+<div id="root">
+    <div class="container-fluid white-bg mt-0">
+        <div class="container">
+            <div class="row" style="min-height: 100px;">
+                <div class='col d-flex align-items-center pl-0'></div>
+                <!-- <div class="col-auto d-flex align-items-center"><img class="" src="/assets/logo/dark_logo.png"
+                        alt="" height="35.74"></div> -->
+                <div class="col-auto pt-4" style="font-family: cursive;">
+                    <!-- <div id="DEgermen"> <span> <a>DE</a> </span></div>
+                    <div id="ENenglish"> <span> <a>EN</a> </span></div> -->
+
+                    <!-- <span id="DEgermen">DE</span>
+                    <span id="ENenglish">EN</span> -->
+                    <button id="DEgermen" [style.backgroundColor]='styleGer[0].background' [style.boxShadow]='styleGer[0].shadow' (click)='enableGerman()' style="margin-bottom: 10px;border-radius: 30px;" class="btn btn-primary">DE</button>
+                    <button id="ENenglish" [style.backgroundColor]='styleEng[0].background' [style.boxShadow]='styleEng[0].shadow' (click)='enableEnglish()' style="margin-left: 15px; margin-bottom: 10px;border-radius: 30px;" class="btn btn-primary" (click)='enableEnglish()'>EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="english" class="container-fluid main-container px-0" style=" margin-top: -69px;">
+        <div class="container px-0 pb-5" style="padding-top: 50px;">
+            <div id="form" [style.display]='displayEng1'>
+                <form [formGroup]="form2" (ngSubmit)='calculateEng(form2)'>
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="title card-header-title"><u>Collect</u> - Calculator</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <p>The following personal information is required for an individual quote for
+                                    occupational disability insurance:</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group"><label class="text-info">Date of birth</label>
+                                    <div class="row px-3">
+                                        <select class="form-control col-sm mr-2" formControlName='dayEnglish'>
+                                            <option value="">day</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select><select class="form-control col-sm mr-2" formControlName='monthEnglish'>
+                                            <option value="">month</option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                            <option value="3">Apr</option>
+                                            <option value="4">May</option>
+                                            <option value="5">Jun</option>
+                                            <option value="6">Jul</option>
+                                            <option value="7">Aug</option>
+                                            <option value="8">Sep</option>
+                                            <option value="9">Oct</option>
+                                            <option value="10">Nov</option>
+                                            <option value="11">Dec</option>
+                                        </select><select id="year" class="form-control col-sm mr-2" formControlName= 'yearEnglish'>
+                                            <option value="">year</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1955">1955</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group"><label class="text-info" for="income">Monthly Salary</label>
+                                    <div class="row">
+                                        <p class="text-muted col-11">Please Insert Your Annual Salary Salary Here</p>
+                                        
+                                    </div>
+                                    <div class="input-group input-group-merge mb-3">
+                                        <input required id="salary"
+                                            type="number" class="form-control input-word-group"
+                                            placeholder="Monthly Salary" formControlName='salaryEnglish' id="numbers">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span>EUR per year</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-6 d-flex align-items-end">
+                                <div class="form-group w-100"><label class="text-info">Monthly Loan
+                                        Installment</label>
+                                    <div class="input-group input-group-merge">
+                                        <input required id="load_rate"
+                                            type="number" class="form-control input-word-group"
+                                            placeholder="Monthly Rate" formControlName='monthlyRateEnglish'>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span>EUR</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="text-info">  
+                                    Do you have aids?</label>
+                             <div>
+                                <mat-radio-group aria-label="Select an option" formControlName='question1english'>
+                                    <mat-radio-button  value="1">
+                                        Yes</mat-radio-button>
+                                    <mat-radio-button style="margin-left: 25px;" value="2">
+                                        No</mat-radio-button>
+                                  </mat-radio-group>
+                             </div>
+                                <label class="text-info"> 
+                                    Have you been sick for 20 or more days in the last year?</label>
+                             <div>
+                                <mat-radio-group aria-label="Select an option" formControlName='question2english'>
+                                    <mat-radio-button value="1">Yes</mat-radio-button>
+                                    <mat-radio-button style="margin-left: 25px;"  value="2">No</mat-radio-button>
+                                  </mat-radio-group>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="mt-3">
+
+
+                            <button id="calculate" [disabled]="form2.invalid" type="submit" class="btn btn-primary">Calculate Now</button>
+                            <span style="margin: 0px 18px; color: red;" *ngIf="form2.invalid">*Please Provide Complete Details</span>
+                        </div>
+                        <!-- <div class="float-right d-flex align-items-center"><img src="assets/logo/dark_logo.png" alt="..." height="35.74">
+                        </div> -->
+                    </div>
+
+
+
+
+
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="germen" class="container-fluid main-container px-0" style=" margin-top: -69px;">
+        <div class="container px-0 pb-5" style="padding-top: 17px;">
+            <form  (ngSubmit)='getDataGerman(form)' [formGroup]="form" >
+            <div id="formge" [style.display]='displayGer1'>
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="title card-header-title"><u>CollectPlus</u> - der Kalkulator</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <p>Für ein individuelles Angebot zur Berufsunfähigkeitsversicherung werden folgende
+                                    persönliche Angaben benötigt:</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group"><label class="text-info">Geburtsdatum</label>
+                                    <div class="row px-3" ><select required aria-placeholder="Tag" class="form-control col-sm mr-2" name="dayGerman"  formControlName="dayGerman">
+                                           <option value="null" disabled='true' [selected]='true'>Tag</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select><select required class="form-control col-sm mr-2" name="monthGerman" formControlName="monthGerman">
+                                            <option value="null" disabled='true' [selected]='true'>Monat</option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mrz</option>
+                                            <option value="3">Apr</option>
+                                            <option value="4">Mai</option>
+                                            <option value="5">Jun</option>
+                                            <option value="6">Jul</option>
+                                            <option value="7">Aug</option>
+                                            <option value="8">Sep</option>
+                                            <option value="9">Okt</option>
+                                            <option value="10">Nov</option>
+                                            <option value="11">Dez</option>
+                                        </select><select required id="yearge" class="form-control col-sm mr-2" name="yearGerman" formControlName="yearGerman">
+                                            <option value="null" disabled='true' [selected]='true'>Jahr</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1955">1955</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group"><label class="text-info"
+                                        for="income">
+                                        jährliches Einkommen</label>
+                                    <div class="row">
+                                        <p class="text-muted col-11">Bitte geben Sie Ihr Jahresgehalt ein.</p>
+                                    </div>
+                                    <div class="input-group input-group-merge mb-3"><input required id="salaryge"
+                                            type="number" class="form-control input-word-group"
+                                            placeholder="Jahreseinkommen" name="salaryGerman" id="numbers" formControlName='salaryGerman'  >
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span>EUR im Jahr</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-6 d-flex align-items-end">
+                                <div class="form-group w-100"><label class="text-info">monatliche Kreditrate</label>
+                                    <div class="input-group input-group-merge"><input required id="load_ratege"
+                                            type="number" class="form-control input-word-group"
+                                            placeholder="monatliche Rate" name="monthlyRateGerman" formControlName='monthlyRateGerman' >
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span>EUR</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- <div class="form-group"><label class="text-info"> Risikoeinstufung</label>
+                                    <select required class="form-control col-sm mr-2" name="manualLoadingFactor1">
+                                        <option value="125">white collar (kaufmännisch)</option>
+                                        <option value="200">blue collar (körperlich tätig)</option>
+                                    </select>
+                                </div> -->
+                                <label class="text-info">  
+                                    Hast du Hilfsmittel?</label>
+                             <div>
+                                <mat-radio-group aria-label="Select an option" formControlName='question1german'>
+                                    <mat-radio-button  value="1">
+                                        Jawohl</mat-radio-button>
+                                    <mat-radio-button style="margin-left: 25px;" value="2">
+                                        Nein</mat-radio-button>
+                                  </mat-radio-group>
+                             </div>
+                                <label class="text-info"> 
+                                    Waren Sie im letzten Jahr 20 oder mehr Tage krank?</label>
+                             <div>
+                                <mat-radio-group aria-label="Select an option" formControlName='question2german'>
+                                    <mat-radio-button value="1">Jawohl</mat-radio-button>
+                                    <mat-radio-button style="margin-left: 25px;"  value="2">Nein</mat-radio-button>
+                                  </mat-radio-group>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="mt-3">
+
+
+                            <button id="calculatege" [disabled]="form.invalid" type="submit" class="btn btn-primary">Jetzt
+                                berechnen</button>
+                                <span style="margin: 0px 18px; color: red;" *ngIf="form.invalid">*Bitte vollständige Angaben machen!</span>
+                        </div>
+                        <!-- <div class="float-right d-flex align-items-center"><img src="assets/logo/dark_logo.png" alt="..." height="35.74">
+                        </div> -->
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="root">
+    <div class="container-fluid main-container px-0" style=" margin-top: -69px;">
+        <div class="container px-0 pb-5" style="padding-top: 50px;">
+            <div class="card" id="card" [style.display]='displayEng2'>
+                <div class="card-header" >
+                    <h1 class="title card-header-title"><u>Collect</u> - Calculator</h1>
+                </div>
+
+
+
+                <div class="card-body">
+                    <p>
+                        Please determine the amount of your coverage - up to 75% of your gross amount..</p>
+                    <div class="row">
+                        <div class="col-auto pt-5">
+                            <h2 class="blue-h2">Your Data</h2>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p id="yearsgEng" class="mb-1 " >{{yearEnglish}}</p>
+                                    <p id="monthly_salaryEng" class="mb-1 " >{{yearlyIncomeEnglish2}}</p>
+                                    <p id="monthly_salaryEng" class="mb-1 " >{{yearlyIncomeEnglish}}</p>
+                                    <!-- <p id="incomeEng" class="mb-1 text-right">{{yearlyIncomeEnglish}}</p> -->
+                                    <!-- <p class="mb-1 text-right" id="gIncome">{{sliderValueGerman}}</p> -->
+                                    <p id="montly_pensionEng" class="mb-1 " >{{shareEnglish}}%</p>
+                                    <p id="montly_pensionEng" class="mb-1 " >{{monthlyRentEnglish}}</p>
+                                    <!-- <p  class="mb-1 text-right">{{monthlyLoanInstallmentEnglish}}</p>
+                                    <p  class="mb-1 text-right">{{maxDurationVBUPensionEnglish}}</p>
+                                    <p  class="mb-1 text-right">{{numberOfVBUAnnualPositionsEnglish}}%</p>
+                                    <p class="mb-1 text-right">{{capitalAtDBUEnglish}}</p>
+                                    <p  class="mb-1 text-right">{{totalEnglish}}</p>
+                                    <p  class="mb-1 text-right">{{paymentMethodEnglish}}</p> -->
+                                </div>
+                                <div class="col-auto">
+                                    <p class="mb-1">Years</p>
+                                    <p class="mb-1">€ Annual income</p>
+                                    <p class="mb-1">€ monthly income</p>
+                                    <p class="mb-1">% insured ratio</p>
+                                    <!-- <p class="mb-1">€ gross montly income</p> -->
+                                    <!-- <p class="mb-1">% Share of gross income</p> -->
+                                    <p class="mb-1">€ monthly pension</p>
+                                    <!-- <p class="mb-1">€ monthly loan installment</p>
+                                    <p class="mb-1">maximum duration of the vBU pension</p>
+                                    <p class="mb-1"> Number of VBU annual pensions for DBU capital</p>
+                                    <p class="mb-1">Capital at dBU</p>
+                                    <p class="mb-1">
+                                        total</p>
+                                        <p class="mb-1">
+                                            Payment method</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto" id="germanimageeng">
+                            <div class="img-wrapper"><img src={{imgEnglish}} alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <style>
+                            .slidereng {
+                                -webkit-appearance: none;
+                                width: 100%;
+                                height: 17px;
+                                border-radius: 15px;
+                                background: #0f1932;
+                                outline: none;
+                                opacity: 5.7;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+
+                            .slidecontainereng {
+                                margin-top: 22px;
+                                -webkit-appearance: none;
+                                width: 100%;
+                                height: 17px;
+                                border-radius: 15px;
+                                background: #0f1932;
+                                outline: none;
+                                opacity: 0.9;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+
+
+                            .slidereng::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background: rgb(231, 49, 49);
+                                cursor: pointer;
+                            }
+
+                            .slidereng::-moz-range-thumb {
+                                width: 55px;
+                                height: 55px;
+                                border-radius: 50%;
+                                background: none;
+                                cursor: pointer;
+                            }
+                        </style>
+
+
+                        <div class="slidecontainereng ">
+                            <input type="range" min="1" max="100" value='75' (input)='getSliderEng($event)' class="slidereng" id="myRangeeng">
+                            <h3 id="demoeng">{{sliderValueEnglish}}%</h3>
+                        </div>
+                        <!-- <hr> -->
+                        <br>
+                        <span class="MuiSlider-thumb MuiSlider-thumbColorPrimary" tabindex="0" role="slider"
+                            data-index="0" aria-labelledby="continuous-slider" aria-orientation="horizontal"
+                            aria-valuemax="100" aria-valuemin="1" aria-valuenow="46.54" style="left: 46%;"></span>
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+                        </script>
+
+
+
+
+
+                    </div>
+
+
+                    <div class="row" >
+                        <div class="col-auto pt-5">
+                            <h2 class="blue-h2">
+                                YOUR OFFER</h2>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <!-- <p id="firstyearinsurencege" class="mb-1 text-right">{{divisionEnglish}}</p>
+                                    <p class="mb-1 text-right">180</p> -->
+                                    <!-- <p id="tem_disabilityge" class="mb-1 text-right">{{monthlyRentGerman}}</p>                                    -->
+                                    <!-- <p id="per_disabilityge" class="mb-1 text-right">{{firstYearEnglish}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{secondYearEnglish}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{thirdYearEnglish}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{fourthYearEnglish}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{fifthYearEnglish}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{average67YearsEnglish2 | slice:0:5}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{average67YearsEnglish }}</p> -->
+                                    <!-- <p id="loange" class="mb-1 text-right">{{monthlyEnglish}}</p> -->
+                                    <p id="loange" class="mb-1 text-right">{{per_yearEnglish}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{monthlyRentEnglish}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{permDisabilityEngish}}</p>
+                                </div>
+                                <div class="col-auto">
+                                    <!-- <p class="mb-1">€ Insurance contribution
+                                        <select #division (change)="conditions(division.value)" id="division">
+                                            <option id="firstyearinsurence" value="12">per month</option>
+                                            <option value="4">per Quartal</option>
+                                            <option value="2">per quarter</option>
+                                            <option value="1">per year</option>
+                                        </select> In the first year of insurance
+                                    </p> -->
+                                    <!-- <p class="mb-1">€ Days to the earliest payout date</p>
+                                    <p class="mb-1">Contribution vBU + dBU in year 1 per ZW.</p>
+                                    <p class="mb-1">Contribution vBU + dBU in year 2 per ZW.</p>
+                                    <p class="mb-1">Contribution vBU + dBU in year 3 per ZW.</p>
+                                    <p class="mb-1">Contribution vBU + dBU in year 4 per ZW.</p>
+                                    <p class="mb-1">Contribution vBU + dBU in year 5 per ZW.</p>
+                                   
+                                    <p class="mb-1">Average contribution year 1-5 per ZW</p>
+                                    <p class="mb-1">
+                                        Average contribution for a term up to 67 years of age</p> -->
+                                    <!-- <p class="mb-1">
+                                        Monthly</p> -->
+                                    <p class="mb-1">
+                                        Required Token ODI per year</p>
+                                    <p class="mb-1">
+                                        In the even of term disability</p>
+                                    <p class="mb-1">
+                                        In the even of perm disability</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer d-flex justify-content-between">
+                    <div class="mt-3"><button id="ToLook" class="btn btn-primary mr-3" (click)='toLookEng()' [attr.data-toggle]="modal" [attr.data-target]="login_popup"> PROCEED</button><button
+                            class="btn btn-outline-primary mr-3" id="abort" (click)='abortEng()' type="button" style="color: blue;">
+                            ABORT</button></div>
+                    <!-- <div class="float-right d-flex align-items-center"><img src="" alt="..." height="35.74"></div> -->
+                </div>
+            </div>
+            <div class="container px-0" id="application" >
+                <div class="card" [style.display]='displayEng3'>
+                    <div class="card-header">
+                        <h2>
+                            Welcome to the online application!</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Please fill out this application in full and then send it to an
+                            axtractsupport@axtract.co.uk.</p>
+                        <p>
+                            Thanks very much!</p>
+                    </div>
+                    <div class="card-footer "><button id="abortEng "  (click)='abortEng2()' class="btn btn-outline-primary mr-3 abort">
+                            ABORT</button><a href="assets/attachments/Antrag.pdf" class="btn btn-outline-primary float-right abort" >
+                            Download application</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div id="root">
+
+    <div class="container-fluid main-container px-0" style=" margin-top: -69px;">
+        <div class="container px-0 pb-5">
+            <div class="card" id="cardge" [style.display]='displayGer2'>
+                <div class="card-header">
+                    <h1 class="title card-header-title"><u>CollectPlus </u> - der Kalkulator</h1>
+                </div>
+
+
+
+                <div class="card-body">
+                    <p>
+                        Bitte bestimmen Sie die Höhe Ihrer Absicherung - bis zu 75% Ihres Bruttos.</p>
+                    <div class="row">
+                        <div class="col-auto pt-5">
+                            <h2 class="blue-h2">IHRE DATEN</h2>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p id="yearsgege" class="mb-1 " >{{yearGerman}}</p>
+                                    <p id="monthly_salaryge" class="mb-1 " >{{yearlyIncomeGerman2}}</p>
+                                    <p id="monthly_salaryge" class="mb-1 " >{{yearlyIncomeGerman}}</p>
+                                    <!-- <p id="incomege" class="mb-1 text-right">{{yearlyIncomeGerman}}</p> -->
+                                    <!-- <p class="mb-1 text-right" id="gIncome">{{sliderValueGerman}}</p> -->
+                                    <p id="montly_pensionge" class="mb-1 " >{{shareGerman}}</p>
+                                    <p id="montly_pensionge" class="mb-1 " >{{monthlyRentGerman}}</p>
+                                    <!-- <p id="loange" class="mb-1 text-right">{{monthlyLoanInstallmentGerman}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{maxDurationVBUPension}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{numberOfVBUAnnualPositions}}%</p>
+                                    <p id="loange" class="mb-1 text-right">{{capitalAtDBU}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{total}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{paymentMethod}}</p> -->
+                                    
+                                </div>
+                                <div class="col-auto">
+                                    <p class="mb-1">Jahre</p>
+                                    <p class="mb-1">€ Jahresgehalt</p>
+                                    <p class="mb-1">€ Brutto-Monatseinkommen</p>
+                                    <!-- <p class="mb-1">€ gross montly income</p> -->
+                                    <!-- <p class="mb-1">% Anteil des Brutto-Einkommens</p> -->
+                                    <p class="mb-1">% 
+                                        Versicherungsverhältnis</p>
+                                    <p class="mb-1">€ Monatliche Rente</p>
+                                    <!-- <p class="mb-1">€ monatliche Kreditrate</p>
+                                    <p class="mb-1">maximale Laufzeit der vBU-Rente</p>
+                                    <p class="mb-1">Anzahl VBU-Jahresrenten für DBU-Kapital</p>
+                                    <p class="mb-1">Kapital bei dBU</p>
+                                    <p class="mb-1">Gesamt</p>
+                                    <p class="mb-1">Bezahlverfahren</p> -->
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto " id="germanimage">
+                            <div class="img-wrapper"><img src={{imgGerman}} alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <style>
+                            .slider {
+                                -webkit-appearance: none;
+                                width: 100%;
+                                height: 17px;
+                                border-radius: 15px;
+                                background: #0f1932;
+                                outline: none;
+                                opacity: 5.7;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+
+                            .slidecontainer {
+                                margin-top: 22px;
+                                -webkit-appearance: none;
+                                width: 100%;
+                                height: 17px;
+                                border-radius: 15px;
+                                background: #0f1932;
+                                outline: none;
+                                opacity: 0.9;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+
+
+                            .slider::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background: rgb(247, 51, 51);
+                                cursor: pointer;
+                            }
+
+                            .slider::-moz-range-thumb {
+                                width: 55px;
+                                height: 55px;
+                                border-radius: 50%;
+                                background: #007c83;
+                                cursor: pointer;
+                            }
+
+                            .slidecontainereng input,
+                            .slidecontainer input {
+                                background: #27a6ac !important;
+                            }
+                        </style>
+
+
+                        <div class="slidecontainer ">
+                            <input type="range" min="1" max="100" value="75" class="slider" #sliderValue (input)='getSlider($event)' id="myRange">
+                            <h3 id="demo">{{sliderValueGerman}}%</h3>
+                        </div>
+               
+
+
+
+
+
+
+
+                        <br>
+                        <span class="MuiSlider-thumb MuiSlider-thumbColorPrimary" tabindex="0" role="slider"
+                            data-index="0" aria-labelledby="continuous-slider" aria-orientation="horizontal"
+                            aria-valuemax="100" aria-valuemin="1" aria-valuenow="46.54" style="left: 46%;"></span>
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+                        </script>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="row" >
+                        <div class="col-auto pt-5">
+                            <h2 class="blue-h2">
+                                IHR ANGEBOT</h2>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <!-- <p id="firstyearinsurencege" class="mb-1 text-right">{{divisionGerman}}</p>
+                                    <p class="mb-1 text-right">180</p> -->
+                                    <!-- <p id="tem_disabilityge" class="mb-1 text-right">{{monthlyRentGerman}}</p>                                    -->
+                                    <!-- <p id="per_disabilityge" class="mb-1 text-right">{{firstYear}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{secondYear}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{thirdYear}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{fourthYear}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{fifthYear}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{averageYearsGerman2 | slice:0:5}}</p>
+                                    <p id="per_disabilityge" class="mb-1 text-right">{{average67Years}}</p> -->
+                                    <!-- <p id="loange" class="mb-1 text-right">{{monthlyGerman}}</p> -->
+                                    <p id="loange" class="mb-1 text-right">{{per_yearGerman}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{monthlyRentGerman}}</p>
+                                    <p id="loange" class="mb-1 text-right">{{permDisabilityGerman}}</p>
+                                </div>
+                                <div class="col-auto">
+                                    <!-- <p class="mb-1">€ Versicherungsbeitrag
+                                        <select #divisionGermans (change)="conditionsGerman(divisionGermans.value)" id="divisionge">
+                                            <option id="firstyearinsurencege" value="12">pro Monat</option>
+                                            <option value="4">pro Quartal</option>
+                                            <option value="2">pro Halbjahr</option>
+                                            <option value="1">pro Jahr</option>
+                                        </select> im ersten Versicherungsjahr
+                                    </p>
+                                    <p class="mb-1">€ Tage bis zum frühesten Auszahlungstermin</p>
+                                    <p class="mb-1">Beitrag vBU + dBU im Jahr 1 je ZW.</p>
+                                    <p class="mb-1">Beitrag vBU + dBU im Jahr 2 je ZW.</p>
+                                    <p class="mb-1">Beitrag vBU + dBU im Jahr 3 je ZW.</p>
+                                    <p class="mb-1">Beitrag vBU + dBU im Jahr 4 je ZW.</p>
+                                    <p class="mb-1">Beitrag vBU + dBU im Jahr 5 je ZW.</p>
+                                    <p class="mb-1">Durchschnitts-beitrag Jahr 1-5 je ZW.</p>
+                                    <p class="mb-1">Durchschnitts-beitrag bei Laufzeit bis Vollendung 67. Lebensjahr</p> -->
+                                    <!-- <p class="mb-1">monatlich</p> -->
+                                    <p class="mb-1">
+                                        Erforderliches ODI-Token pro Jahr</p>
+                                    <p class="mb-1">Bei Begriff Behinderung</p>
+                                    <p class="mb-1">Auch bei Dauerbehinderung</p>
+                              
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card-footer d-flex justify-content-between">
+                    <div class="mt-3"><button id="ToLookge" (click)='showWelcome()' [attr.data-toggle]="modal" [attr.data-target]="login_popup" class="btn btn-primary mr-3 ">
+                            ABSCHLIESSEN</button><button class="btn btn-outline-primary mr-3 " id="abortge"
+                            type="button" style="color: blue;" (click)='showDataGerman()'> ABBRECHEN</button></div>
+                    <!-- <div class="float-right d-flex align-items-center"><img src="" alt="..." height="35.74"></div> -->
+                </div>
+            </div>
+            <div class="container px-0" id="applicationge" >
+                <div class="card" [style.display]='displayGer3'>
+                    <div class="card-header">
+                        <h2>
+                            Willkommen zum Online-Antrag!</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Bitte füllen Sie diesen Antrag vollständig aus und senden Sie ihn anschließend
+                            an axtractsupport@axtract.co.uk</p>
+                        <p>
+                            Vielen Dank!</p>
+                    </div>
+                    <div class="card-footer"><button id="AppAbrortge " (click)='showMain()'  class="btn btn-outline-primary mr-3 abort">
+                            ABBRECHEN</button><a href="assets/attachments/Antrag.pdf" class="btn btn-outline-primary float-right abort">
+                            Antrag herunterladen</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="modal fade" #close_modal   id="login-popup">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <a href="#" class="modal-close" data-dismiss="modal" #closebutton aria-label="Close"><em
+                    class="ti ti-close"></em></a>
+            <div class="ath-container m-0">
+                <div class="ath-body bg-theme tc-light">
+                    <h5 class="ath-heading title">Sign in <small class="tc-default">with your ODI
+                            Account</small></h5>
+                    <form #LoginForm="ngForm" (submit)="GetLoginValues(LoginForm.value)" >
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="email" ngModel name="Email" class="input-bordered" placeholder="Your Email" required email #Email="ngModel" >
+                                <small class="form-text text-muted" *ngIf="Email.touched && !Email.valid">Enter Valid Email</small>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="password" ngModel name="Password" class="input-bordered" placeholder="Password" required >
+                                
+                            </div>
+                        </div>
+                        <div class="field-item d-flex justify-content-between align-items-center">
+                            <div class="field-item pb-0">
+                                <input class="input-checkbox" name="remember" id="remember-me-100" type="checkbox">
+                                <label for="remember-me-100">Remember Me</label>
+                            </div>
+                            <div class="forget-link fz-6">
+                                <a href="#" data-toggle="modal" data-dismiss="modal"
+                                    data-target="#reset-popup">Forgot password?</a>
+                            </div>
+                        </div>
+                        <button 
+                        
+                            class="btn btn-primary btn-block "  [style.display]='button' [disabled]="!LoginForm.valid" >Sign In </button>
+                            <div class="spinner-border " role="status" style="text-align: center;margin: auto;display: block;" [style.display]='spinner' >
+                                <span class="visually-hidden"></span>
+                              </div>
+                    </form>
+                    <div class="sap-text"><span>Or Sign In With</span></div>
+
+                    <ul class="row gutter-20px gutter-vr-20px">
+                        <li class="col"><a href="#" class="btn btn-md btn-facebook btn-block"><em
+                                    class="icon fab fa-facebook-f"></em><span>Facebook</span></a></li>
+                        <li class="col"><a href="#" class="btn btn-md btn-google btn-block"><em
+                                    class="icon fab fa-google"></em><span>Google</span></a></li>
+                    </ul>
+                    <div class="ath-note text-center">
+                        Don’t have an account? <a href="#" data-toggle="modal" data-dismiss="modal"
+                            data-target="#register-popup"> <strong>Sign up here</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="register-popup">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em
+                    class="ti ti-close"></em></a>
+            <div class="ath-container m-0">
+                <div class="ath-body bg-theme tc-light">
+                    <h5 class="ath-heading title">Sign Up <small class="tc-default">Create New TokenWiz
+                            Account</small></h5>
+                    <form #SignUpForm="ngForm" (ngSubmit)="GetSignUpValues(SignUpForm.value)">
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="text" name="vUserName"  ngModel class="input-bordered" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="email" name="vEmailID" ngModel class="input-bordered" placeholder="Your Email" required email #vEmail="ngModel">
+                                <small class="form-text text-muted" *ngIf="vEmail.touched && !vEmail.valid">Enter Valid Email</small>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="password" name="vPassword" ngModel class="input-bordered" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <div class="field-wrap">
+                                <input type="password" name="vRepeatPasswod" ngModel class="input-bordered" placeholder="Repeat Password" required>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <input class="input-checkbox" id="agree-term-2" type="checkbox">
+                            <label for="agree-term-2">I agree to Icos <a href="#">Privacy Policy</a> &amp; <a
+                                    href="#">Terms</a>.</label>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-md" [disabled]="!SignUpForm.valid">Sign Up</button>
+                    </form>
+                    <div class="sap-text"><span>Or Sign Up With</span></div>
+
+                    <ul class="row gutter-20px gutter-vr-20px">
+                        <li class="col"><a href="#" class="btn btn-md btn-facebook btn-block"><em
+                                    class="icon fab fa-facebook-f"></em><span>Facebook</span></a></li>
+                        <li class="col"><a href="#" class="btn btn-md btn-google btn-block"><em
+                                    class="icon fab fa-google"></em><span>Google</span></a></li>
+                    </ul>
+                    <div class="ath-note text-center">
+                        Already have an account? <a href="#" data-toggle="modal" data-dismiss="modal"
+                            data-target="#login-popup"> <strong>Sign in here</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="preloader"><span class="spinner spinner-round"></span></div> -->
